@@ -24,7 +24,7 @@ In this task, you will create a detection for the first attack of the previous e
 
 1. In the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel**.
 
-1. Select the Microsoft Sentinel Workspace you created earlier.
+1. Select the pre-created Sentinel **loganalyticworkspace** from the available list.
 
 1. Select **Logs** from the *General* section.
 
@@ -56,7 +56,8 @@ In this task, you will create a detection for the first attack of the previous e
     ```
 
 1. Now that you have a good detection rule, in the Logs window, select the **+ New alert rule** in the command bar and then select **Create Microsoft Sentinel alert**. This will create a new Scheduled rule.
-**Hint:** You might need to select the ellipsis (...) button in the command bar.
+
+   > **Hint**: You might need to select the ellipsis (...) button in the command bar.
 
 1. This starts the "Analytics rule wizard". For the *General* tab type:
 
@@ -71,7 +72,7 @@ In this task, you will create a detection for the first attack of the previous e
 
    ![Lab overview.](../media/2.png)
 
-1. On the *Set rule logic* tab, the *Rule query* should be populated already with your KQL query, as well as the entities under *Alert enrichment - Entity mapping*.
+1. On the *Set rule logic* tab, the *Rule query* should be populated already with your KQL query, add new entities under *Alert enhancement - Entity mapping*.
 
     |Entity|Identifier|Data Field|
     |:----|:----|:----|
@@ -93,7 +94,7 @@ In this task, you will create a detection for the first attack of the previous e
 
 1. For the *Incident settings* tab, leave the default values and select **Next: Automated response >** button.
 
-1. On the *Automated response* tab under *Automation rules*, select **Add new**.
+1. On the *Automated response* tab under *Automation rules*, select **+ Add new**.
 
 1. Use the settings in the table to configure the automation rule.
 
@@ -117,7 +118,7 @@ In this task, you will create a detection for the first attack of the previous e
 
     ![Lab overview.](../media/Lab06-task03-automationrule.png)
 
-1. Select the **Next: Review + Create >** button.
+1. Select the **Next: Review + create >** button.
   
 1. On the *Review and create* tab, select the **Save** button to create the new Scheduled Analytics rule.
 
@@ -179,7 +180,7 @@ In this task, you will create a detection for the second attack of the previous 
 
 1. Now that you have a good detection rule, in the Logs window, select **+ New alert rule** in the command bar and then select **Create Microsoft Sentinel alert**. **Hint:** You might need to select the ellipsis (...) button in the command bar.
 
-1. This starts the "Analytics rule wizard". For the *General* tab type:
+1. You will be navigated to **Analytics rule wizard** page. In the *General* tab provide the values:
 
     |Setting|Value|
     |---|---|
@@ -193,7 +194,7 @@ In this task, you will create a detection for the second attack of the previous 
    ![](../media/6-5.png)
 
 
-1. On the *Set rule logic* tab, the *Rule query* should be populated already with your KQL query, and add the details for entities under *Alert enrichment - Entity mapping*.
+1. On the *Set rule logic* tab, the *Rule query* should be populated already with your KQL query, and add the details for entities under *Alert enhancement - Entity mapping* by selecting **+ Add new entity**.
 
     |Entity|Identifier|Data Field|
     |:----|:----|:----|
@@ -215,22 +216,22 @@ In this task, you will create a detection for the second attack of the previous 
 
 1. For the *Incident settings* tab, leave the default values and select **Next: Automated response >** button.
 
-1. On the *Automated response* tab under *Automation rules*, select **Add new (1)** and Use the settings in the table to configure the automation rule Select **Apply (6)**.
+1. On the *Automated response* tab under *Automation rules*, select **+ Add new (1)** and Use the settings in the table to configure the automation rule Select **Apply (6)**.
 
    |Setting|Value|
    |:----|:----|
    |Automation rule name|**SecurityEvent Local Administrators User Add (1)**|
    |Trigger|**When incident is created (2)**|
    |Actions |**Run playbook (3)**|
-   |playbook |**PostMessageTeams-OnIncident (4)**|
+   |Playbook |**PostMessageTeams-OnIncident (4)**|
 
    >**Note:** You have already assigned permissions to the playbook, so it must be available if not click on manage permissions and select it manually and it will be available by now
 
    ![](../media/6-7.png)
 
-1. Select the **Next: Review and create >** button.
+1. Select the **Next: Review + create >** button.
   
-1. On the *Review and create* tab, select the **Save** button to create the new Scheduled Analytics rule.
+1. On the *Review + create* tab, select the **Save** button to create the new Scheduled Analytics rule.
 
 ## Review
 In this lab you have completed the following tasks:
