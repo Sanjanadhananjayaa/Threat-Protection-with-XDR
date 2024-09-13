@@ -282,7 +282,7 @@ In this task, you will create a playbook for next task.
 
 1. In the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel**.
 
-1. Select the Microsoft Sentinel Workspace you created earlier.
+1. Select the **loganalyticworkspace** Microsoft Sentinel Workspace.
 
 1. Select the **Automation** form the *Configuration* section.
 
@@ -296,7 +296,7 @@ In this task, you will create a playbook for next task.
 
 1. Select Enable diagnostics logs in Log Analytics and select your workspace.
 
-1. Click on Next: Connections, Review + Create  and Click on Create and continue to designer.
+1. Click on **Next: Connections** and then select **Next: Review + create >**. Click on **Create playbook** and continue to designer.
 
    > **Note**: We dont have to perform any action on logic app designer, please go back to your sentinel workspace and follow the next labguide.
 
