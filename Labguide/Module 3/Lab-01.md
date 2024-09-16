@@ -2,7 +2,7 @@
 
 ## Lab scenario
 
-You are going to simulate the attacks that you will later use to detect and investigate in Microsoft Defender.
+In this lab, you will simulate various attacks to detect and investigate in Microsoft Defender. Tasks include connecting Windows security events, enabling Microsoft Defender for Cloud, performing attacks such as persistence with registry keys, command and control via DNS, privilege escalation with user addition, and creating a playbook in Microsoft Sentinel.
 
 ## Lab objectives
  In this lab, you will perform the following:
@@ -11,6 +11,7 @@ You are going to simulate the attacks that you will later use to detect and inve
 - Task 3: Persistence Attack with Registry Key Add
 - Task 4: Command and Control Attack with DNS
 - Task 5: Privilege Elevation Attack with User Add
+- Task 5: Playbook Creation
 
 ## Estimated timing: 90 minutes
 
@@ -19,6 +20,8 @@ You are going to simulate the attacks that you will later use to detect and inve
   ![Lab overview.](../media/XDR-Lab03.png)
 
 ### Task 1: Connect the Windows security event connector
+
+In this task, you will configure Microsoft Sentinel to monitor Windows security events by installing **Windows Security Events** and setting up the **Security Events Via Legacy Agent** connector. You'll install the agent on an Azure VM, select **All Events** to stream, and verify the connection.
 
 1. In the Search bar of the Azure portal, type *Microsft Sentinel (1)*, then select **Microsoft Sentinel (2)**.
 
@@ -58,13 +61,12 @@ You are going to simulate the attacks that you will later use to detect and inve
 
     ![Picture 1](../media/lab2-task1-streamevents.png)
 
-> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-> - Click the Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation tab.
-> - Hit the Validate button for the corresponding task.
-> - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-> - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+   <validation step="13a30bee-c2ea-4d84-aff5-94791bc2ec08" />
 
-    <validation step="13a30bee-c2ea-4d84-aff5-94791bc2ec08" />
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. Alternatively, you can navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
+> - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 
 ### Task 2: Enable Microsoft Defender for Cloud
@@ -119,6 +121,8 @@ In this task, you will enable and configure Microsoft Defender for Cloud.
 
 >**Note:** Perform this task in your LAB-VM (svm).
 
+In this task, you will create a temporary folder and a batch file using Command Prompt, then simulate program persistence by adding the file to the Windows startup process via the registry.
+
 1. In the search of the taskbar, enter *Command*. A Command Prompt will be displayed in the search results. Right-click on the Command Prompt and select **Run as Administrator**. Select **Yes** in the User Account Control window that allows the app to run.
 
 1. In the Command Prompt, create a Temp folder in the root directory. Remember to press Enter after the last row:
@@ -143,6 +147,8 @@ In this task, you will enable and configure Microsoft Defender for Cloud.
 ### Task 4: Command and Control Attack with DNS
 
 >**Note:** Perform this task in your LAB-VM (svm).
+
+In this task, you will create a PowerShell script that simulates DNS queries to a C2 server and run it in the background using Command Prompt. This script will generate log entries over time for later use in the Threat Hunting lab, allowing DNS resolution errors to occur as expected.
 
 1. Copy and run this command to create a script that will simulate a DNS query to a C2 server:
 
@@ -214,6 +220,8 @@ In this task, you will enable and configure Microsoft Defender for Cloud.
 
 >**Important:** The next steps are done on a different machine than the one you were previously working on. Look for the Virtual Machine name references.
 
+In this task, you will connect to a virtual machine using Remote Desktop from the Azure portal, download the RDP file, and log in with provided credentials. Once connected, you will use Command Prompt to create a temporary folder and simulate the creation of an admin account.
+
 1. In Azure portal, Search for **Virtual machines (1)** and select **Virtual machines (2)**.
 
    ![VMrdp](../media/vm.png)
@@ -276,13 +284,13 @@ In this task, you will enable and configure Microsoft Defender for Cloud.
     net localgroup administrators theusernametoadd /add
     ```
 
-# Playbook Creation
+### Task 6: Playbook Creation
 
-In this task, you will create a playbook for next task.
+In this task, you will create a playbook in Microsoft Sentinel by selecting the workspace, configuring a playbook named **PostMessageTeams-OnIncident**, enabling diagnostics logs, and then reviewing and creating it without modifying the Logic App designer.
 
 1. In the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel**.
 
-1. Select the Microsoft Sentinel Workspace you created earlier.
+1. Select the **loganalyticworkspace** Microsoft Sentinel Workspace.
 
 1. Select the **Automation** form the *Configuration* section.
 
@@ -296,7 +304,7 @@ In this task, you will create a playbook for next task.
 
 1. Select Enable diagnostics logs in Log Analytics and select your workspace.
 
-1. Click on Next: Connections, Review + Create  and Click on Create and continue to designer.
+1. Click on **Next: Connections** and then select **Next: Review + create >**. Click on **Create playbook** and continue to designer.
 
    > **Note**: We dont have to perform any action on logic app designer, please go back to your sentinel workspace and follow the next labguide.
 
@@ -308,3 +316,4 @@ In this lab you have completed the following tasks:
 - Persistence Attack with Registry Key Add
 - Command and Control Attack with DNS
 - Privilege Elevation Attack with User Add
+- Playbook Creation
