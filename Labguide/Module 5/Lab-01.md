@@ -108,6 +108,8 @@ In this task, you will manage the incidents in the M365 Defender portal.
 
 1. From the sidebar menu, under **Incidents and Alerts**, select **Incidents**. Click on the incident **Created**.
 
+    >**Note:** It may take 24-48 hours for incidents to appear in the Defender portal. If they are not generated within the lab timeframe, you can follow the steps below for an overview on how to manage incidents. Alternatively, you can visit the **Alerts** page under **Incidents and Alerts** to check for any alerts related to the incident, as alerts might be generated during the lab timeframe.
+
 1. To manage an incident, click on **Manage Incident** to edit the details of this incident.
 
     ![Lab overview.](../media/lab10-task1-manage.png) 
