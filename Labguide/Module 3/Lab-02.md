@@ -116,7 +116,7 @@ In this task, you will create a detection for the first attack of the previous e
 
 1. Select **Apply**
 
-    ![Lab overview.](../media/Lab06-task03-automationrule.png)
+    ![Lab overview.](../media/new-xdr-lab3-01.jpg)
 
 1. Select the **Next: Review + create >** button.
   
@@ -216,18 +216,18 @@ In this task, you will create a detection for the second attack of the previous 
 
 1. For the *Incident settings* tab, leave the default values and select **Next: Automated response >** button.
 
-1. On the *Automated response* tab under *Automation rules*, select **+ Add new (1)** and Use the settings in the table to configure the automation rule Select **Apply (6)**.
+1. On the *Automated response* tab under *Automation rules*, select **+ Add new (1)** and Use the settings in the table to configure the automation rule Select **Apply**.
 
    |Setting|Value|
    |:----|:----|
-   |Automation rule name|**SecurityEvent Local Administrators User Add (1)**|
-   |Trigger|**When incident is created (2)**|
-   |Actions |**Run playbook (3)**|
-   |Playbook |**PostMessageTeams-OnIncident (4)**|
+   |Automation rule name|**SecurityEvent Local Administrators User Add (2)**|
+   |Trigger|**When incident is created (3)**|
+   |Actions |**Run playbook (4)**|
+   |Playbook |**PostMessageTeams-OnIncident (5)**|
 
    >**Note:** You have already assigned permissions to the playbook, so it must be available if not click on manage permissions and select it manually and it will be available by now
 
-   ![](../media/6-7.png)
+   ![](../media/new-xdr-lab3-02.jpg)
 
 1. Select the **Next: Review + create >** button.
   
