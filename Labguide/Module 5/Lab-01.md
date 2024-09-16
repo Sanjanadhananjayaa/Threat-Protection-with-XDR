@@ -37,7 +37,7 @@ In this task, you will onboard a device to Microsoft Defender for Endpoint using
 
     >**Note:** Take a moment to allow the option panel to fully load on the security portal.
 
-1. Click on the **Assets** section on the left menu bar and Expand **Assets** and choose **Devices**. You will see **Hang on! We're preparing new spaces for your data and connecting them** notification. Wait for the Device Inventory page to fully load.
+1. Click on the **Assets** section on the left menu bar and expand **Assets** and choose **Devices**. You will see **Hang on! We're preparing new spaces for your data and connecting them** notification. Wait for the Device Inventory page to fully load.
 
     ![](../media/new-xdr-lab5-1.png)
 
@@ -73,7 +73,7 @@ In this task, you will onboard a device to Microsoft Defender for Endpoint using
 
     ![](../media/SC-200-img25.png)
 
-1. Back on the Onboarding page within the Microsoft 365 Defender portal, navigate to the "2. Run a detection test" section, and copy the detection test script by clicking the **Copy** button.
+1. Back on the Onboarding page within the Microsoft 365 Defender portal, navigate to the "2. Run a detection test" section and copy the detection test script by clicking the **Copy** button.
 
     ![](../media/lab01-task3-runscript.png) 
 
