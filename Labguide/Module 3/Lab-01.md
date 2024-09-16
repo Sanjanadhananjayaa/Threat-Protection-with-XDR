@@ -2,7 +2,7 @@
 
 ## Lab scenario
 
-You are going to simulate the attacks that you will later use to detect and investigate in Microsoft Defender.
+In this lab, you will simulate various attacks to detect and investigate in Microsoft Defender. Tasks include connecting Windows security events, enabling Microsoft Defender for Cloud, performing attacks such as persistence with registry keys, command and control via DNS, privilege escalation with user addition, and creating a playbook in Microsoft Sentinel.
 
 ## Lab objectives
  In this lab, you will perform the following:
