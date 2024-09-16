@@ -39,11 +39,11 @@ In this task, you will onboard a device to Microsoft Defender for Endpoint using
 
 1. Click on the **Assets** section on the left menu bar and expand **Assets** and choose **Devices**. You will see **Hang on! We're preparing new spaces for your data and connecting them** notification. Wait for the Device Inventory page to fully load.
 
-    ![](../media/new-xdr-lab5-1.png)
+    ![](../media/new-xdr-lab5-1.jpg)
 
 1. Click on **System (1)** to expand the dropdown, then select **Settings (2)** from the left-hand menu. On the Settings page, choose **Endpoints (3)**.
 
-    ![](../media/new-xdr-lab5-2.png)
+    ![](../media/new-xdr-lab5-2.jpg)
 
    >**Note:** If you do not see the **Endpoints** option under Settings, log out by selecting the top-right circle with your account initials and select Sign out. Other options that you might want to try are to refresh the page with Ctrl+F5 wait for 30-45 minutes or open the page InPrivate. Login again with the Tenant Email credentials.
 
