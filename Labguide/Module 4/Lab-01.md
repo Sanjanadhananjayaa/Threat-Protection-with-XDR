@@ -24,6 +24,8 @@ You are a Security Operations Analyst working at a company that implemented Micr
 
 ### Task 1: Connect the Windows security event connector
 
+In this task, you'll configure the connector to ensure seamless log transmission and enhance your security monitoring capabilities.
+
 1. In the Search bar of the Azure portal, type **Microsft Sentinel (1)**, then select **Microsoft Sentinel (2)**.
 
     ![](../media/09.png) 
@@ -32,9 +34,17 @@ You are a Security Operations Analyst working at a company that implemented Micr
 
     ![](../media/Lab01-task2-loganalyticworkspace.png) 
 
-1. Navigate to the **Data connectors (1)** tab under the Configuration section. Choose **Security Events Via Legacy Agent (2)**, and then click on **Open connector page (3)**.
+1. Navigate to the **Data connectors (1)** tab under the Configuration section. Search for **windows security events (2)**, and then click on **Go to content hub (3)**.
 
-    ![Picture 1](../media/04-07-2024.png) 
+    ![Picture 1](../media/go_to_content.png)
+
+1. In search bar **windows security events (1)** , Select **windows security events (2)**, Choose **Install**.
+
+    ![Picture 1](../media/windows_security.png)
+
+1. In the **Data connectors**, Scroll-down **Security events via legacy Agent** , choose **Open connector page**.
+
+    ![Picture 1](../media/data_connectors.png)
    
 8. In the configuration section, opt for **Install agent on Azure Windows Virtual Machine (1)**, and then choose **Download & install agent for Azure Windows Virtual Machines (2)**.
 
@@ -46,7 +56,7 @@ You are a Security Operations Analyst working at a company that implemented Micr
         
 10. Once **Connected (1)**, select the **Virtual Machine (2)** link from the top.
 
-    ![Picture 1](../media/lab2-task1-svm1.png) 
+    ![Picture 1](../media/svm_connect.png) 
 
 11. On the virtual machine page select the **s2vm-<inject key="DeploymentID" enableCopy="false" />** virtual machine. Then, click on **Connect** and wait until the connection is Connected.
 
@@ -96,6 +106,8 @@ In this task, you will enable and configure Microsoft Defender for Cloud.
 
 ### Task 3: Persistence Attack with Registry Key Add 
 
+ In this task, you'll analyze how attackers leverage registry keys to establish persistence and explore methods to detect and mitigate such threats.
+
 >**Note:** Perform this task in your LAB-VM (svm).
 
 1. In the taskbar search, type Command. Right-click on Command Prompt in the results and choose **Run as Administrator**. Click **Yes** in the User Account Control window.
@@ -117,6 +129,8 @@ In this task, you will enable and configure Microsoft Defender for Cloud.
     ```
 
 ### Task 4: Command and Control Attack with DNS
+
+In this task, you'll investigate how attackers utilize DNS for C2 communications and learn to identify and mitigate these threats effectively.
 
 >**Note:** Perform this task in your LAB-VM (svm).
 
@@ -187,6 +201,8 @@ In this task, you will enable and configure Microsoft Defender for Cloud.
     >**Important**: Keep these windows open and let the PowerShell script run in the background. It needs to generate log entries for several hours. You can proceed with the next task and exercises while the script runs. The data generated will be used later in the Threat Hunting lab. This process will not significantly impact data or processing.
 
 ### Task 5: Privilege Elevation Attack with User Add
+
+In this task, you'll examine the techniques used in such attacks and develop strategies to detect and prevent unauthorized user account creation.
 
 >**Important:** The next steps are done on a different machine than the one you were previously working on. Look for the Virtual Machine name references.
 
@@ -366,6 +382,8 @@ In this task, you will create a hunting query, bookmark a result, and create a L
 
 1. Select **Add to existing incident**. This will display all the incidents in the right pane.
 
+   ![Picture 1](../media/add_exisitng.png) 
+
 1. Select one of the incidents and then select **Add**. 
 
     ![Picture 1](../media/addingbookmark.png) 
@@ -415,6 +433,8 @@ In this task, instead of using a LiveStream, you will create a NRT analytics que
     - For the Entity type drop-down list select **Host**.
     - For the Identifier drop-down list select **HostName**.
     - For the Value drop-down list select **Computer**.
+
+    ![Picture 1](../media/add_new_entity.png)
 
 1. Scroll down and select **Next: Incident settings>** button.
 
@@ -483,18 +503,23 @@ In this task, you will explore using notebooks in Microsoft Sentinel.
    
 1. Select **X** if an informational window appears in the Microsoft Azure Machine Learning Studio.
 
-1. In the command bar, to the right of the **Compute instance:**  selector, select the **+** symbol to create a new Azure ML Compute Instance. 
+1. In the command bar, to the right of the **Compute instance:**  selector, select the **+New** to create a new Azure ML Compute Instance.
 
-    >**Hint:** It might be hidden inside the ellipsis icon **(...)**.
+      ![Picture 1](../media/compute.png)
+
 
     >**Note:** You can have more screen space by hiding the Azure ML Studio left blade by selecting the 3 lines on the top left, as well as the Notebooks Files by selecting the **<<** icon.
 
 1. Type a unique name in the *Compute name* field. This will identify your compute instance.
 
-1. Scroll down and select the first Compute Size option available.
+1. Scroll down and select the first Compute Size option available from **D family**.
 
+    ![Picture 1](../media/demouser_cpu.png)
+   
 1. Select the **Create** button at the bottom of the screen. Close any feedback window that may appear. This will take a few minutes; you will see a notification (bell icon) when it is done and the *Compute instance* left icon turns from blue to green.
 
+    ![Picture 1](../media/create_1.png)
+   
 1. Once the Compute has been created and running, verify that the kernel to use is *Python 3.8 - AzureML*. 
 
    >**Hint:** This is shown on the right of the command bar.
@@ -505,7 +530,7 @@ In this task, you will explore using notebooks in Microsoft Sentinel.
    
    >**Note:** If you cannot complete the steps above to access the Notebook, you can follow it on its GitHub viewer page instead. [Getting Started with Azure ML Notebooks and Microsoft Sentinel](https://nbviewer.org/github/Azure/Azure-Sentinel-Notebooks/blob/master/A%20Getting%20Started%20Guide%20For%20Azure%20Sentinel%20ML%20Notebooks.ipynb)
 
-    <validation step="195e92c4-6f46-4c21-8f73-cf0655c9dfc4" />
+    <validation step="45086f11-29f0-4daa-ae93-6cd87c02fee4" />
 
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
     > - Click the Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation tab.

@@ -20,6 +20,8 @@ The integration of a Logic App with Threat Protection involves configuring trigg
 
 ### Task 1: Connect the Windows security event connector
 
+In this task, you'll set up the connector to ensure effective log transmission and enhance your security monitoring framework.
+
 1. In the Search bar of the Azure portal, type *Microsoft Sentinel*, then select **Microsoft Sentinel**.
 
     ![](../media/09.png) 
@@ -28,7 +30,11 @@ The integration of a Logic App with Threat Protection involves configuring trigg
 
     ![](../media/Lab01-task2-loganalyticworkspace.png) 
 
-1. Navigate to the left menu and go to the Content Management section; there, select **Content Hub (1)**. On the Content Hub page, locate **Windows Security Events (2)**, and then **select (3)** it. Finally, click on **Install (4)**.
+1. On the **Data connectors (1)**, In the search bar type **windows security events (2)**, **Go to content hub (3)**
+
+   ![](../media/go_to_content.png)
+   
+1. Navigate to the left menu and go to the **Content Management** section; there, select **Content Hub (1)**. On the Content Hub page, locate **Windows Security Events (2)**, and then **select (3)** it. Finally, click on **Install (4)**.
 
     ![Picture 1](../media/Lab02-task1-contenthub.png)  
 
@@ -50,7 +56,7 @@ The integration of a Logic App with Threat Protection involves configuring trigg
         
 10. Once **connected (1)**, select the **Virtual Machine (2)** link from the top.
 
-    ![Picture 1](../media/lab2-task1-svm1.png) 
+    ![Picture 1](../media/svm_connect.png) 
 
 11. On the virtual machine page select the **s2vm-<inject key="DeploymentID" enableCopy="false" />** virtual machine and click on connect. wait until get connected.
 

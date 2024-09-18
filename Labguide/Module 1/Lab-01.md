@@ -22,6 +22,8 @@ You start by initializing the Defender for the Endpoint environment. Next, you o
 
 ### Task 1: Log in to Azure Portal
 
+  In this task , you login to Azure Portal and allows you to manage and configure your cloud resources through a web-based interface.
+
 1. If you are not login to the azure portal then in the virtual machine (VM) on the left, click on the Azure Portal, as shown below.
 
    ![](../media/login1.png)
@@ -48,7 +50,7 @@ You start by initializing the Defender for the Endpoint environment. Next, you o
 
 ### Task 2: Explore Sentinel workspace
 
- Sentinel Workspace is a centralized platform by Microsoft Azure designed for managing, investigating, and responding to security threats across your organization's cloud services.
+ In this task, you will explore the Sentinel workspace to review and manage security data, alerts, and incident responses within Microsoft's Azure Sentinel.
 
 1. In the Search bar of the Azure portal, type *Microsft Sentinel*, then select **Microsoft Sentinel**.
 
@@ -58,11 +60,11 @@ You start by initializing the Defender for the Endpoint environment. Next, you o
 
     ![](../media/Lab01-task2-loganalyticworkspace.png) 
 
-1. Explore the Overview page to obtain a summary of the workspace, including information on incidents, alerts, health, and other essential details.
+1. Explore the **Overview** page to obtain a summary of the workspace, including information on incidents, alerts, health, and other essential details.
 
     ![](../media/lab01-task2-overview.png)
 
-1. Navigate to the 'Data connectors' section in the left sidebar and examine the currently configured connectors for collecting security-related data.
+1. Navigate to the **Data connectors** under **configuration** section in the left sidebar and examine the currently configured connectors for collecting security-related data.
 
     ![](../media/dataconnector.png)
 
@@ -81,7 +83,6 @@ You start by initializing the Defender for the Endpoint environment. Next, you o
     <validation step="08faf6a7-9700-4ffa-85a4-de53afb85777" />
 
     > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-    > - Click the Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation tab.
     > - Hit the Validate button for the corresponding task.
     > - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
     > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
