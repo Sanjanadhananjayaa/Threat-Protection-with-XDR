@@ -88,21 +88,21 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
 
 1. After completing the task, hit the Validate button under Validation tab integrated within your lab guide. If you receive a success message, you can proceed to the next task, if not, carefully read the error message and retry the step, following the instructions in the lab guide.
 
-  ![](./media/XDRintro1.png)
+   ![](./media/update03.png)
 
 2. You can also validate the task by navigating to the Lab Validation tab, from the upper right corner in the lab guide section.
 
-   ![](./media/XDRintro1.png)
+   ![](./media/update02.png)
 
 3. If you need any assistance, please contact us at labs-support@spektrasystems.com.
 
-## Let's Get Started with Azure Portal
+## Login to the Azure Portal
  
-1. On your virtual machine, click on the Azure Portal icon as shown below:
+1. In the JumpVM, click on the Azure portal shortcut of the Microsoft Edge browser, which is created on the desktop.
  
     ![Launch Azure Portal](./media/XDRintro5.png)
 
-2. You'll see the **Sign into Microsoft Azure** tab. Here, enter your credentials:
+2. On the Sign in to Microsoft Azure tab, you will see the login screen. Enter the following email or username, and click on Next.
  
    - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
  
@@ -114,12 +114,35 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
  
      ![Enter Your Password](./media/sc900-image-2.png)
  
-4. If prompted to stay signed in, you can click "No."
+4. If you see the pop-up Action Required, click Ask Later.
+
+   ![](./media/update04.png)
+
+   > **NOTE**: Do not enable MFA, select Ask Later.
+
+5. If you see the pop-up Stay Signed in?, select No.
+
+6. If you see the pop-up **You have free Azure Advisor recommendations!**, close the window to continue the lab.
+
+7. If a Welcome to **Microsoft Azure** popup window appears, select **Maybe Later** to skip the tour.
+
+8. Now that you will see the Azure Portal Dashboard, click on Resource groups from the Navigate panel to see the resource groups.
+
+   ![](./media/XDRintro6.png)  
  
-5. If a **Welcome to Microsoft Azure** pop-up window appears, simply click "Maybe Later" to skip the tour.
- 
-6. Click "Next" from the bottom right corner to embark on your Lab journey!
- 
-     ![Start Your Azure Journey](./media/XDRintro6.png)
- 
-Now you're all set to explore the powerful world of technology. Feel free to reach out if you have any questions along the way. Enjoy your workshop!
+In this hands-on lab, you'll explore Azure Sentinel and Microsoft Defender for Cloud while integrating Logic Apps for automated incident responses, enhancing your security operations and threat detection capabilities.
+
+## Support Contact
+
+The CloudLabs support team is available 24/7, 365 days a year, via email and live chat to ensure seamless assistance at any time. We offer dedicated support channels tailored specifically for both learners and instructors, ensuring that all your needs are promptly and efficiently addressed.
+
+Learner Support Contacts:
+
+ - Email Support: labs-support@spektrasystems.com
+ - Live Chat Support: https://cloudlabs.ai/labs-support
+
+Now, click on Next from the lower right corner to move on to the next page.
+
+![Start Your Azure Journey](./media/XDRintro6.png)
+
+## Happy Learning!!
