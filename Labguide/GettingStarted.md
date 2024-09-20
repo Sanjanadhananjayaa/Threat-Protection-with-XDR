@@ -33,6 +33,7 @@ In this hands-on lab, the architecture flow encompasses several key components e
 
 ## Architecture Diagram
 
+![](./media/update01.png)
 
 
 ## Explanation of Components
@@ -82,6 +83,18 @@ For convenience, you can open the lab guide in a separate window by selecting th
 Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
  
 ![Manage Your Virtual Machine](./media/XDRintro4.png)
+
+## Lab validation
+
+1. After completing the task, hit the Validate button under Validation tab integrated within your lab guide. If you receive a success message, you can proceed to the next task, if not, carefully read the error message and retry the step, following the instructions in the lab guide.
+
+  ![](./media/XDRintro1.png)
+
+2. You can also validate the task by navigating to the Lab Validation tab, from the upper right corner in the lab guide section.
+
+   ![](./media/XDRintro1.png)
+
+3. If you need any assistance, please contact us at labs-support@spektrasystems.com.
 
 ## Let's Get Started with Azure Portal
  
