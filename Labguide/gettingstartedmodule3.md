@@ -1,4 +1,4 @@
-# Module-03 Threat Protection with XDR- Conduct attacks and Investigate an Incident
+# Module - 03 : Threat Protection with XDR - Conduct attacks and Investigate an Incident
 ### Overall Estimated Duration: 140 minutes
 ## Overview
 
