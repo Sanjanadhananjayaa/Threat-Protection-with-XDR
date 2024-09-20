@@ -92,7 +92,7 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
 
 2. You can also validate the task by navigating to the Lab Validation tab, from the upper right corner in the lab guide section.
 
-   ![](./media/update02.png)
+   ![](./media/update002.png)
 
 3. If you need any assistance, please contact us at labs-support@spektrasystems.com.
 
@@ -128,7 +128,7 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
 
 8. Now that you will see the Azure Portal Dashboard, click on Resource groups from the Navigate panel to see the resource groups.
 
-   ![](./media/XDRintro6.png)  
+   ![](./media/update05.png)  
  
 In this hands-on lab, you'll explore Azure Sentinel and Microsoft Defender for Cloud while integrating Logic Apps for automated incident responses, enhancing your security operations and threat detection capabilities.
 
