@@ -1,35 +1,32 @@
-# Module 01- Guided Lab: Threat Protection with XDR & Module 02- Guided Lab: Threat Protection with XDR
-### Overall Estimated Duration: 150 minutes
+# Module-03 Threat Protection with XDR- Conduct attacks and Investigate an Incident
+### Overall Estimated Duration: 140 minutes
 ## Overview
 
-In this hands-on lab, you will explore the integration of Azure Sentinel, Microsoft Defender, and Logic Apps to enhance security operations and automate threat response. You will begin by reviewing and managing a pre-configured Azure Sentinel workspace, where you will investigate security incidents, configure automated responses, and analyze data to strengthen threat detection and response capabilities. Next, you will integrate Logic Apps with Threat Protection and Extended Detection and Response (XDR) solutions, enabling the creation of automated workflows and playbooks that streamline security alerts and actions. Additionally, you will configure connectors, onboard devices, and interact with Microsoft Defender for Cloud, providing you with practical experience in automating and centralizing threat intelligence and response.
+In this hands-on lab, you will explore the integration of Microsoft Sentinel, Microsoft Defender, and KQL-based detections to enhance security operations and automate incident investigation. You will begin by creating custom analytics rules in Microsoft Sentinel to detect persistence and privilege elevation attacks, using KQL queries to identify and respond to threats in your environment. Next, you will investigate incidents triggered by these rules, reviewing details, changing incident status, and executing automated responses with playbooks. This lab provides practical experience in building threat detections, automating alerts, and investigating incidents, helping you strengthen your organization’s security posture and response capabilities.
 
 ## Objective
 
-Understand how to manage security incidents and automate responses using Azure Sentinel, Logic Apps, and Microsoft Defender for Cloud. Gain skills in configuring connectors, creating playbooks, and integrating threat protection across your organization’s security operations. By the end of this lab, you will be able to:
+Understand how to simulate and detect various cyber attacks using Microsoft Defender and Microsoft Sentinel. Gain skills in connecting Windows security events, performing attack simulations, and analyzing alerts. By the end of this lab, you will be able to:
 
-**Explore and Manage Azure Sentinel Workspace**: Learn to navigate and review a pre-configured Sentinel workspace to investigate security incidents, configure automated responses, and analyze data for threat detection.
+**Conduct Attacks**: Understand how to simulate various attacks to comprehend threat detection and investigation processes within Microsoft Defender. You will explore attack techniques like persistence and privilege escalation to enhance your knowledge of security operations.
 
-**Integrate Logic Apps with Threat Protection and XDR**: Understand how to automate threat detection and response workflows by integrating Logic Apps with Threat Protection and Extended Detection and Response (XDR) systems, including configuring triggers and actions.
+**Create Detections**: Gain skills in creating custom analytics rules using KQL queries to identify persistence and privilege elevation attacks. This lab will equip you with the ability to enhance your organization’s threat detection capabilities through effective monitoring and alerting.
 
-**Enable and Configure Microsoft Defender for Cloud**: Gain practical skills in enabling Microsoft Defender for Cloud, onboarding devices, and integrating them into the Sentinel workspace for real-time monitoring and incident management.
-
-**Create and Manage Security Playbooks**: Develop the ability to create and update playbooks within Microsoft Sentinel, streamlining automated responses to security incidents and alerts within your organization’s cloud environment.
+**Investigate an Incident**: Learn to analyze incidents by reviewing details, managing alerts, and running playbooks to automate response actions. This lab will provide you with practical experience in effective security incident management, ensuring a comprehensive approach to responding to threats.
 
 ## Pre-requisites
 
 Participants should have:
 
-**Familiarity with Azure Sentinel and Defender for Cloud**: Understanding of Microsoft Sentinel and Microsoft Defender for Cloud capabilities, including security incident management and cloud security monitoring.
+**Familiarity with Azure Sentinel and Microsoft Defender**: A basic understanding of Azure Sentinel and Microsoft Defender concepts, including incident management and threat detection.
 
-**Experience with Azure Portal and Logic Apps**: Familiarity with navigating the Azure Portal and using Azure Logic Apps for automation and workflow management.
-Basic Security Operations Knowledge: Proficiency in security operations, including working with security incidents, alerts, and configuring threat detection tools.
+**Knowledge of KQL (Kusto Query Language)**: Familiarity with KQL for querying data within Azure Sentinel to create and analyze detection rules.
 
-**Basic Security Operations Knowledge**: Proficiency in security operations, including working with security incidents, alerts, and configuring threat detection tools.
+**Basic Security Operations Understanding**: An understanding of common security incidents, including persistence and privilege escalation attacks, to effectively engage in lab activities.
 
 ## Architecture
 
-In this hands-on lab, the architecture flow encompasses several key components essential for enhancing security operations. You will start by setting up an Azure Sentinel workspace and integrating Microsoft Defender for Cloud. At the core of the architecture is Azure Sentinel, which aggregates security data, manages incidents, and enables automated responses through Logic Apps. The integration of Microsoft Defender for Cloud enhances security posture by monitoring and protecting Azure resources. Logic Apps facilitate the automation of workflows, allowing for efficient handling of threat alerts and responses. Additionally, the architecture includes various connectors for data ingestion, such as the Windows Security Event Connector, enabling real-time monitoring of security incidents. This system promotes streamlined operations and effective threat management across the Azure environment.
+In this hands-on lab, the architecture flow encompasses several essential components to enhance security operations. You’ll begin by setting up the Azure Sentinel workspace, which serves as the centralized hub for monitoring and managing security incidents. Integrated with Microsoft Defender for real-time threat detection and response, the architecture ensures comprehensive security coverage across cloud resources. Log Analytics plays a key role in querying and analyzing logs using KQL, enabling the creation of custom analytics rules for threat detection. Logic Apps automate workflows and responses, facilitating seamless orchestration of security actions based on detected incidents. This architecture also supports a user interaction layer where security analysts can review incidents, execute automated responses, and manage playbooks efficiently, ensuring a robust and responsive security posture throughout the organization.
 
 ## Architecture Diagram
 
@@ -40,17 +37,15 @@ In this hands-on lab, the architecture flow encompasses several key components e
 
 The architecture for this lab involves the following key components:
 
-**Azure Sentinel**: Azure Sentinel is a cloud-native SIEM (Security Information and Event Management) solution that provides intelligent security analytics and threat intelligence across your enterprise. It enables you to collect, analyze, and respond to security incidents in real time.
+**Microsoft Sentinel**: A scalable, cloud-native SIEM tool that provides intelligent security analytics, enabling the detection, investigation, and automated response to security incidents.
 
-**Microsoft Defender for Cloud**: This service enhances your security posture by providing continuous security assessment and recommendations for Azure resources, helping to protect against threats and vulnerabilities.
+**Microsoft Defender for Cloud**: Integrated threat protection platform that secures workloads in Azure and on-premises, detecting vulnerabilities and attacks in real time.
 
-**Logic Apps**: Azure Logic Apps is a cloud service that allows you to automate workflows and integrate applications and data across various systems. In this lab, it is used to create automated responses to security incidents and alerts.
+**Logic Apps**: Cloud-based workflows that automate tasks and orchestrate processes for security incident responses within Sentinel, integrating with Defender and other services.
 
-**Windows Security Event Connector**: This connector facilitates the collection of security events from Windows systems, enabling the monitoring and analysis of potential threats and incidents within the Azure environment.
+**KQL Queries (Azure Monitor Logs)**: Kusto Query Language (KQL) is used to query data in Azure Monitor Logs for detecting anomalous activities or specific threat patterns.
 
-**Microsoft Teams**: Microsoft Teams serves as a collaboration platform where the Security Operations Center (SOC) team can communicate and manage alerts and incidents effectively, streamlining incident response efforts.
-
-**Playbooks in Microsoft Sentinel**: Playbooks are workflows built using Logic Apps that automate responses to incidents, allowing for quick and consistent actions based on predefined rules and conditions.
+**Playbooks**: Playbooks are automated workflows built with Logic Apps that respond to detected threats by automating actions, helping with timely incident management.
 
 ## Getting Started with the Lab
  
@@ -130,7 +125,7 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
 
    ![](./media/update05.png)  
  
-In this hands-on lab, you'll explore Azure Sentinel and Microsoft Defender for Cloud while integrating Logic Apps for automated incident responses, enhancing your security operations and threat detection capabilities.
+In this hands-on lab, you'll simulate attacks, create custom detections using KQL in Azure Sentinel, and automate incident response with Microsoft Defender for Cloud and Logic Apps playbooks for effective threat management.
 
 ## Support Contact
 
