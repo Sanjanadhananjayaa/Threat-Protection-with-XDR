@@ -28,8 +28,7 @@ In this hands-on lab, the architecture flow encompasses several key components e
 
 ## Architecture Diagram
 
-![](./media/update01.png)
-
+![](./media/newarch03.png)
 
 ## Explanation of Components
 
