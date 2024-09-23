@@ -16,9 +16,7 @@ You start by initializing the Defender for the Endpoint environment. Next, you o
 
   ![Lab overview.](../media/01-1.png)
 
-## Exercise 1: Exploring a Pre-Created Azure Sentinel Workspace
-
-### Task 1: Log in to Azure Portal
+## Task 1: Log in to Azure Portal
 
   In this task , you login to Azure Portal and allows you to manage and configure your cloud resources through a web-based interface.
 
@@ -46,7 +44,7 @@ You start by initializing the Defender for the Endpoint environment. Next, you o
    
 1. If a **Welcome to Microsoft Azure** popup window appears, click on Maybe Later to skip the tour.
 
-### Task 2: Explore Sentinel workspace
+## Task 2: Explore Sentinel workspace
 
  In this task, you will explore the Sentinel workspace to review and manage security data, alerts, and incident responses within Microsoft's Azure Sentinel.
 
@@ -89,4 +87,4 @@ You start by initializing the Defender for the Endpoint environment. Next, you o
 
 In this lab, you configured a Logic App with Threat Protection by setting up triggers and actions to receive alerts. In the next lab, you will test the workflow and interact with XDR solutions for automated responses. Click **Next** to continue with the lab.
 
-### You've successfully completed this lab.
+## You've successfully completed this lab.
