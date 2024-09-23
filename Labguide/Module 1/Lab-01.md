@@ -87,6 +87,6 @@ You start by initializing the Defender for the Endpoint environment. Next, you o
 
 ## Summary
 
-In this lab, you explored a pre-configured Azure Sentinel workspace, investigating security incidents, configuring automated responses, and analyzing data for threat detection. You navigated the Azure portal to access the Sentinel workspace, reviewed incidents and alerts, and examined the various tools and capabilities within Sentinel for enhancing security operations. This lab demonstrated how to manage and respond to security threats using Azure Sentinel, showcasing practical steps for incident investigation and automated response configuration.
+In this lab, you configured a Logic App with Threat Protection by setting up triggers and actions to receive alerts. In the next lab, you will test the workflow and interact with XDR solutions for automated responses. Click Next to continue with the lab.
 
 ### You've successfully completed this lab.
