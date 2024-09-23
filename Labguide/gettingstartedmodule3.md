@@ -30,7 +30,7 @@ In this hands-on lab, the architecture flow encompasses several essential compon
 
 ## Architecture Diagram
 
-![](./media/newarch01.png)
+![](./media/newarch02.png)
 
 
 ## Explanation of Components
