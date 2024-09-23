@@ -2,7 +2,7 @@
 ### Overall Estimated Duration: 60 minutes
 ## Overview
 
-In this hands-on lab, you will act as a Security Operations Analyst at a company that has implemented Microsoft Defender XDR solutions. Your task is to view alerts within incidents to assess their impact, conduct root cause investigations, and mitigate these alerts using Microsoft 365 Defender tools. You will perform key tasks, including onboarding devices, managing incidents, and investigating alerts in the M365 Defender portal.
+In this lab, you will act as a Security Operations Analyst at a company that has implemented Microsoft Defender XDR solutions. Your task is to view alerts within incidents to assess their impact, conduct root cause investigations, and mitigate these alerts using Microsoft 365 Defender tools. You will perform key tasks, including onboarding devices, managing incidents, and investigating alerts in the M365 Defender portal.
 
 ## Objective
 
@@ -23,7 +23,7 @@ Participants should have:
 
 ## Architecture
 
-In this hands-on lab, the architecture leverages Microsoft 365 Defender to manage security incidents effectively. You will onboard devices to Microsoft Defender for Endpoint, enabling continuous threat detection. The Microsoft 365 Defender portal serves as the central management interface, where analysts can view alerts, manage incidents, and perform investigations. The incident management system aggregates alerts from various sources, providing context for security events. Additionally, advanced hunting allows for custom queries to investigate incidents further, while automation features streamline response actions to enhance incident management and threat mitigation.
+In this lab, the architecture leverages Microsoft 365 Defender to manage security incidents effectively. You will onboard devices to Microsoft Defender for Endpoint, enabling continuous threat detection. The Microsoft 365 Defender portal serves as the central management interface, where analysts can view alerts, manage incidents, and perform investigations. The incident management system aggregates alerts from various sources, providing context for security events. Additionally, advanced hunting allows for custom queries to investigate incidents further, while automation features streamline response actions to enhance incident management and threat mitigation.
 
 ## Architecture Diagram
 
