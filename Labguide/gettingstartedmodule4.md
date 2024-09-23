@@ -1,4 +1,4 @@
-# Module - 04 : Threat Protection with XDR - Threat Hunting using Notebooks with Microsoft Sentinel
+# Threat Protection with XDR - Threat Hunting using Notebooks with Microsoft Sentinel - 4
 ### Overall Estimated Duration: 120 minutes
 ## Overview
 
