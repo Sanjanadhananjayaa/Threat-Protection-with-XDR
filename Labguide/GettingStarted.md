@@ -13,7 +13,7 @@ Understand how to manage security incidents and automate responses using Azure S
 - **Enable and Configure Microsoft Defender for Cloud**: Gain practical skills in enabling Microsoft Defender for Cloud, onboarding devices, and integrating them into the Sentinel workspace for real-time monitoring and incident management.
 - **Create and Manage Security Playbooks**: Develop the ability to create and update playbooks within Microsoft Sentinel, streamlining automated responses to security incidents and alerts within your organization’s cloud environment.
 
-## Pre-requisites
+## Prerequisites
 
 Participants should have:
 
