@@ -1,6 +1,6 @@
 # Lab 02 - Create Detections
 
-### Estimated timing: 30 minutes
+### Estimated Duration: 30 minutes
 
 You are a Security Operations Analyst working at a company that implemented Microsoft Sentinel. You are going to work with Log Analytics KQL queries and from there, you will create custom analytics rules to help discover threats and anomalous behaviors in your environment.
 
@@ -233,6 +233,6 @@ In this task, you will create a detection for the second attack of the previous 
 
 ## Summary
 
-In this lab, you created custom analytics rules in Microsoft Sentinel to detect persistence and privilege escalation attacks. Using Kusto Query Language (KQL), you wrote queries to identify specific attack behaviors and configured alerts for these conditions. This practical exercise equipped you with the skills to enhance your organization’s threat detection capabilities by leveraging Sentinel’s analytics features.
+In this lab, you created custom analytics rules in Microsoft Sentinel to detect persistence and privilege escalation attacks using KQL queries. Next, you will investigate an incident triggered by these detections. Click **Next** to continue with the lab.
 
-## You've successfully completed this lab. Please proceed with the next lab.
+## You've successfully completed this lab.
