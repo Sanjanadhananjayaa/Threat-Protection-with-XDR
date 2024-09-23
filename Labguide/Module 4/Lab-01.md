@@ -1,6 +1,6 @@
 # Lab 01 - Threat Hunting using Notebooks with Microsoft Sentinel
 
-## Estimated timing: 120 minutes
+## Estimated Duration: 120 minutes
 
 You are a Security Operations Analyst working at a company that implemented Microsoft Sentinel. You have received threat intelligence about a Command and Control (C2 or C&C) technique.  You need to perform a hunt and watch for the threat.
 
