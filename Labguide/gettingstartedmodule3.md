@@ -9,9 +9,7 @@ In this hands-on lab, you will explore the integration of Microsoft Sentinel, Mi
 Understand how to simulate and detect various cyber attacks using Microsoft Defender and Microsoft Sentinel. Gain skills in connecting Windows security events, performing attack simulations, and analyzing alerts. By the end of this lab, you will be able to:
 
 - **Conduct Attacks**: Understand how to simulate various attacks to comprehend threat detection and investigation processes within Microsoft Defender. You will explore attack techniques like persistence and privilege escalation to enhance your knowledge of security operations.
-
 - **Create Detections**: Gain skills in creating custom analytics rules using KQL queries to identify persistence and privilege elevation attacks. This lab will equip you with the ability to enhance your organization’s threat detection capabilities through effective monitoring and alerting.
-
 - **Investigate an Incident**: Learn to analyze incidents by reviewing details, managing alerts, and running playbooks to automate response actions. This lab will provide you with practical experience in effective security incident management, ensuring a comprehensive approach to responding to threats.
 
 ## Pre-requisites
@@ -19,9 +17,7 @@ Understand how to simulate and detect various cyber attacks using Microsoft Defe
 Participants should have:
 
 - **Familiarity with Azure Sentinel and Microsoft Defender**: A basic understanding of Azure Sentinel and Microsoft Defender concepts, including incident management and threat detection.
-
 - **Knowledge of KQL (Kusto Query Language)**: Familiarity with KQL for querying data within Azure Sentinel to create and analyze detection rules.
-
 - **Basic Security Operations Understanding**: An understanding of common security incidents, including persistence and privilege escalation attacks, to effectively engage in lab activities.
 
 ## Architecture
@@ -38,13 +34,9 @@ In this hands-on lab, the architecture flow encompasses several essential compon
 The architecture for this lab involves the following key components:
 
 - **Microsoft Sentinel**: A scalable, cloud-native SIEM tool that provides intelligent security analytics, enabling the detection, investigation, and automated response to security incidents.
-
 - **Microsoft Defender for Cloud**: Integrated threat protection platform that secures workloads in Azure and on-premises, detecting vulnerabilities and attacks in real time.
-
 - **Logic Apps**: Cloud-based workflows that automate tasks and orchestrate processes for security incident responses within Sentinel, integrating with Defender and other services.
-
 - **KQL Queries (Azure Monitor Logs)**: Kusto Query Language (KQL) is used to query data in Azure Monitor Logs for detecting anomalous activities or specific threat patterns.
-
 - **Playbooks**: Playbooks are automated workflows built with Logic Apps that respond to detected threats by automating actions, helping with timely incident management.
 
 ## Getting Started with the Lab
