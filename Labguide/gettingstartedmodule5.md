@@ -6,64 +6,45 @@ In this hands-on lab, you will act as a Security Operations Analyst at a company
 
 ## Objective
 
-Understand how to configure Microsoft Sentinel for security monitoring and threat detection through the integration of various data sources and tools. Gain skills in simulating real-world attacks, including persistence, Command and Control, and privilege escalation, to better understand threat landscapes. By the end of this lab, you will be able to :
+Understand how to utilize Microsoft 365 Defender to enhance security operations and effectively manage incidents. Gain skills in onboarding devices, managing incidents, and investigating alerts. By the end of this lab, you will be able to:
 
-- **Connect the Windows Security Event Connector for log collection**: Learn how to connect the Windows Security Event Connector in Microsoft Sentinel, enabling you to gather security event logs from Windows machines for comprehensive threat monitoring and analysis.
-
-- **Enable Microsoft Defender for Cloud to secure resources**: Gain expertise in enabling Microsoft Defender for Cloud, configuring it to provide continuous security assessments and threat protection for your cloud resources, ensuring a secure and compliant environment.
-
-- **Simulate a Persistence Attack using Registry Key Add**: Understand how to simulate a persistence attack by adding a registry key, providing insights into how attackers maintain access to compromised systems and how you can detect and mitigate these threats.
-
-- **Simulate a Command and Control (C2) Attack using DNS queries**: Learn to simulate a Command and Control (C2) attack via DNS queries, helping you understand how attackers communicate with compromised machines and how to detect these malicious activities within your environment.
-
-- **Simulate a Privilege Elevation Attack by adding a new user**: Develop the ability to simulate a privilege elevation attack by adding a new user account, allowing you to identify how attackers might escalate privileges and compromise sensitive systems.
-
-- **Create a hunting query to detect suspicious PowerShell activity**: Acquire the skills to create a custom hunting query to detect suspicious PowerShell activity, enabling you to proactively hunt for potential threats and investigate malicious behavior in your environment.
-
-- **Develop a near real-time (NRT) query rule for continuous monitoring**: Learn to build and implement a near real-time (NRT) query rule for continuous monitoring of your environment, automating the detection of security threats and responding swiftly to incidents.
-
-- **Execute a search job to detect Command and Control (C2) activity**: Gain hands-on experience in executing search jobs within Microsoft Sentinel to detect C2 activity, improving your ability to track and mitigate threats involving external command and control communications.
-
-- **Explore Microsoft Sentinel Notebooks for advanced threat hunting and analysis**: Master the use of Microsoft Sentinel Notebooks for advanced threat hunting and analysis, leveraging data science techniques to detect, investigate, and respond to sophisticated attacks.
+- **Onboard a Device**: Learn how to onboard devices to Microsoft Defender for Endpoint, ensuring they are monitored for security threats and visible in the Defender portal.
+- **Manage Incidents**: Understand how to navigate the M365 Defender portal to manage incidents, including editing incident details, classifying incidents, and assigning them to users or groups.
+- **Investigate Alerts**: Gain practical skills in investigating security alerts, including analyzing suspicious behavior, running advanced queries, and utilizing deep analysis for thorough investigations.
 
 ## Pre-requisites
 
 Participants should have:
 
-- **Familiarity with Microsoft Sentinel**: Understanding the core concepts and functionalities of Microsoft Sentinel, including data connectors and threat management.
+- **Basic Understanding of Microsoft 365 Defender**: Familiarity with Microsoft 365 Defender functionalities and interface.
+- **Knowledge of Security Concepts**: Basic knowledge of cybersecurity concepts and incident response procedures.
+- **Access to Microsoft 365 Defender**: A valid Microsoft 365 Defender account with necessary permissions.
 
-- **Basic Knowledge of PowerShell**: Proficiency in using PowerShell for script execution and command-line operations.
-  
-- **Understanding of Security Events**: Familiarity with Windows security events and their significance in threat detection and investigation.
-  
-- **Experience with KQL**: Basic knowledge of Kusto Query Language (KQL) to create and run queries in Microsoft Sentinel.
-
-- **Basic Understanding of Cybersecurity Concepts**: Awareness of common attack techniques and defense strategies, particularly regarding Command and Control communications and privilege escalation.
 
 ## Architecture
 
-In this hands-on lab, the architecture flow encompasses essential components to enhance threat hunting capabilities. You will connect the Windows security event connector to the Microsoft Sentinel workspace, serving as the centralized hub for monitoring security incidents and executing hunting queries. Integrated with Microsoft Defender for Cloud, this architecture enables real-time threat detection across your environment. Log Analytics is used for querying security events with Kusto Query Language (KQL), allowing for custom hunting queries and alerts. PowerShell scripts simulate attacks to generate log entries, while Notebooks facilitate interactive data exploration. This comprehensive architecture empowers security analysts to proactively hunt for and effectively respond to threats within the organization.
+In this lab, the architecture leverages Microsoft 365 Defender to manage security incidents effectively. You will onboard devices to Microsoft Defender for Endpoint, enabling continuous threat detection. The Microsoft 365 Defender portal serves as the central management interface, where analysts can view alerts, manage incidents, and perform investigations. The incident management system aggregates alerts from various sources, providing context for security events. Additionally, advanced hunting allows for custom queries to investigate incidents further, while automation features streamline response actions to enhance incident management and threat mitigation.
 
 ## Architecture Diagram
 
-![](./media/01-2.png)
+![](./media/01-3.png)
 
 
 ## Explanation of Components
 
 The architecture for this lab involves the following key components:
 
-- **Microsoft Sentinel**: Microsoft Sentinel is a cloud-native security information and event management (SIEM) solution that provides intelligent security analytics and threat intelligence across the enterprise, enabling proactive threat hunting and incident response.
+- **Microsoft 365 Defender Portal**: This is the primary interface for security operations analysts. It provides a centralized view of alerts, incidents, and investigation tools, enabling efficient management of security threats across the organization.
 
-- **Microsoft Defender for Cloud**: This service offers advanced threat protection for cloud resources, integrating seamlessly with Microsoft Sentinel to enhance security posture through continuous monitoring and threat detection.
+- **Microsoft Defender for Endpoint**: This component offers advanced endpoint protection and detection capabilities. It continuously monitors devices for potential threats, allowing for real-time identification and response to security incidents.
 
-- **Log Analytics Workspace**: The Log Analytics workspace collects and analyzes log data, enabling users to perform powerful queries using Kusto Query Language (KQL). It serves as a central repository for security event logs.
+- **Incident Management System**: This system aggregates alerts generated from various sources, helping analysts manage and investigate incidents. It provides context by linking related alerts and identifying affected devices and users.
 
-- **Windows Security Event Connector**: This connector facilitates the ingestion of security event logs from Windows environments into Microsoft Sentinel, ensuring comprehensive visibility into potential security incidents.
+- **Alert System**: The alert system collects and categorizes security alerts from Microsoft Defender products and other integrated services. This component is critical for identifying potential security threats and prioritizing responses.
 
-- **PowerShell Scripts**: PowerShell scripts are used to simulate various attack scenarios, generating log entries that can be analyzed during the threat hunting process, helping to train and refine detection capabilities.
+- **Advanced Hunting**: This feature allows analysts to perform custom queries on the data collected by Microsoft Defender. It enables deeper investigations into specific incidents and patterns, helping analysts uncover hidden threats.
 
-- **Notebooks in Microsoft Sentinel**: Notebooks provide an interactive environment for data analysis and visualization, enabling security analysts to explore and share insights derived from security data effectively.
+- **Automation and Response Capabilities**: Microsoft 365 Defender includes tools for automating response actions based on predefined rules. This helps streamline incident management and enhances the efficiency of threat mitigation efforts.
 
 ## Getting Started with the Lab
  
@@ -143,7 +124,7 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
 
    ![](./media/update05.png)  
  
-In this hands-on lab, you'll leverage Microsoft Sentinel and Microsoft Defender for Cloud to simulate attacks, create custom detections using KQL, and automate incident responses to enhance your organization's security operations.
+In this hands-on lab, you'll utilize Microsoft 365 Defender to onboard devices, manage incidents, and investigate alerts, enabling you to effectively mitigate security threats and enhance your organization's overall security posture.
 
 ## Support Contact
 
