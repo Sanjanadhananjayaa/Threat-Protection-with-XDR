@@ -1,6 +1,6 @@
 # Lab 01 - Threat Hunting using Notebooks with Microsoft Sentinel
 
-## Lab scenario
+## Estimated timing: 120 minutes
 
 You are a Security Operations Analyst working at a company that implemented Microsoft Sentinel. You have received threat intelligence about a Command and Control (C2 or C&C) technique.  You need to perform a hunt and watch for the threat.
 
@@ -15,8 +15,6 @@ You are a Security Operations Analyst working at a company that implemented Micr
  - Task 7: Create a NRT query rule
  - Task 8: Create a Search
  - Task 9: Explore Notebooks
-
-## Estimated timing: 120 minutes
 
 ## Architecture Diagram
 
@@ -538,14 +536,8 @@ In this task, you will explore using notebooks in Microsoft Sentinel.
     > - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
     > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-## Review
-In this lab, you have completed the following tasks:
-- Connect the Windows security event connector
-- Enable Microsoft Defender for Cloud
-- Persistence Attack with Registry Key Add
-- Command and Control Attack with DNS
-- Privilege Elevation Attack with User Add
-- We created a hunting query.
-- We created an NRT query rule.
-- We Created a Search.
-- Explore Notebooks
+## Summary
+
+In this lab, you will set up an Azure Sentinel workspace and integrate Microsoft Defender for Cloud to enhance security operations. You will connect data sources, simulate attacks to create a real-world threat environment, and utilize KQL to develop custom detections. Additionally, you will automate incident responses using Logic Apps playbooks, effectively demonstrating the management of security incidents through hands-on experience. This lab will showcase the comprehensive approach to threat detection and response within Azure, empowering you to strengthen your organization’s security posture.
+
+## You have successfully completed the lab
