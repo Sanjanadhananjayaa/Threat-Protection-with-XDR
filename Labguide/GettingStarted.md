@@ -1,4 +1,4 @@
-# Module 01- Guided Lab: Threat Protection with XDR & Module 02- Guided Lab: Threat Protection with XDR
+# Threat Protection with XDR - Review and explore sentinel workspace and Integrate Logic App with Threat Protection and XDR - 1 & 2
 ### Overall Estimated Duration: 150 minutes
 ## Overview
 
