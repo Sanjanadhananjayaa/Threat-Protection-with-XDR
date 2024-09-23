@@ -1,6 +1,6 @@
 # Lab 01 - Mitigate threats using Microsoft 365 Defender 
 
-## Lab scenario
+## Estimated timing: 60 minutes
 
 You're a Security Operations Analyst working at a company that implemented Microsoft Defender XDR solutions. You need to see the alerts in an incident to see the incident's full impact do a root cause investigation and mitigate these alerts using M365 Defender tools.
 
@@ -10,8 +10,6 @@ You're a Security Operations Analyst working at a company that implemented Micro
 - Task 1: Onboard a Device 
 - Task 2: Manage Incidents
 - Task 3: Investigate Alerts
-
-## Estimated timing: 60 minutes
 
 ## Architecture Diagram
 
@@ -182,9 +180,8 @@ In this task, you will investigate and mitigate the alerts through recommendatio
 
     ![Lab overview.](../media/lab10-task2-alerts-recommendations.png)
 
-## Review
+## Summary
 
-In this lab, you have completed the following tasks:
-- Onboarded a Device
-- Managed Incidents
-- Investigated Alerts
+In this lab, you utilized Microsoft 365 Defender to onboard devices, manage incidents, and investigate alerts. You navigated the Microsoft 365 Defender portal to onboard endpoints, reviewed and managed security incidents, and analyzed alerts to identify potential threats. By executing these tasks, you successfully mitigated security risks and enhanced your organization's security operations, demonstrating effective use of Microsoft Defender tools in real-world scenarios.
+
+## You have successfully completed the lab
