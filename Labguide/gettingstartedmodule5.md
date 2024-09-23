@@ -12,7 +12,7 @@ Understand how to utilize Microsoft 365 Defender to enhance security operations 
 - **Manage Incidents**: Understand how to navigate the M365 Defender portal to manage incidents, including editing incident details, classifying incidents, and assigning them to users or groups.
 - **Investigate Alerts**: Gain practical skills in investigating security alerts, including analyzing suspicious behavior, running advanced queries, and utilizing deep analysis for thorough investigations.
 
-## Pre-requisites
+## Prerequisites
 
 Participants should have:
 
