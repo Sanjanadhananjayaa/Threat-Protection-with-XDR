@@ -1,4 +1,4 @@
-# Module - 05 : Threat Protection with XDR - Mitigate threats using Microsoft 365 Defender
+# Threat Protection with XDR - Mitigate threats using Microsoft 365 Defender - 5
 ### Overall Estimated Duration: 60 minutes
 ## Overview
 
