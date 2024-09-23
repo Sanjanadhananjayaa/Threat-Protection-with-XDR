@@ -2,7 +2,7 @@
 ### Overall Estimated Duration: 140 minutes
 ## Overview
 
-In this hands-on lab, you will explore the integration of Microsoft Sentinel, Microsoft Defender, and KQL-based detections to enhance security operations and automate incident investigation. You will begin by creating custom analytics rules in Microsoft Sentinel to detect persistence and privilege elevation attacks, using KQL queries to identify and respond to threats in your environment. Next, you will investigate incidents triggered by these rules, reviewing details, changing incident status, and executing automated responses with playbooks. This lab provides practical experience in building threat detections, automating alerts, and investigating incidents, helping you strengthen your organization’s security posture and response capabilities.
+In this lab, you will explore the integration of Microsoft Sentinel, Microsoft Defender, and KQL-based detections to enhance security operations and automate incident investigation. You will begin by creating custom analytics rules in Microsoft Sentinel to detect persistence and privilege elevation attacks, using KQL queries to identify and respond to threats in your environment. Next, you will investigate incidents triggered by these rules, reviewing details, changing incident status, and executing automated responses with playbooks. This lab provides practical experience in building threat detections, automating alerts, and investigating incidents, helping you strengthen your organization’s security posture and response capabilities.
 
 ## Objective
 
@@ -22,7 +22,7 @@ Participants should have:
 
 ## Architecture
 
-In this hands-on lab, the architecture flow encompasses several essential components to enhance security operations. You’ll begin by setting up the Azure Sentinel workspace, which serves as the centralized hub for monitoring and managing security incidents. Integrated with Microsoft Defender for real-time threat detection and response, the architecture ensures comprehensive security coverage across cloud resources. Log Analytics plays a key role in querying and analyzing logs using KQL, enabling the creation of custom analytics rules for threat detection. Logic Apps automate workflows and responses, facilitating seamless orchestration of security actions based on detected incidents. This architecture also supports a user interaction layer where security analysts can review incidents, execute automated responses, and manage playbooks efficiently, ensuring a robust and responsive security posture throughout the organization.
+In this lab, the architecture flow encompasses several essential components to enhance security operations. You’ll begin by setting up the Azure Sentinel workspace, which serves as the centralized hub for monitoring and managing security incidents. Integrated with Microsoft Defender for real-time threat detection and response, the architecture ensures comprehensive security coverage across cloud resources. Log Analytics plays a key role in querying and analyzing logs using KQL, enabling the creation of custom analytics rules for threat detection. Logic Apps automate workflows and responses, facilitating seamless orchestration of security actions based on detected incidents. This architecture also supports a user interaction layer where security analysts can review incidents, execute automated responses, and manage playbooks efficiently, ensuring a robust and responsive security posture throughout the organization.
 
 ## Architecture Diagram
 
