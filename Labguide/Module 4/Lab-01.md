@@ -1,6 +1,6 @@
 # Lab 01 - Threat Hunting using Notebooks with Microsoft Sentinel
 
-## Estimated timing: 120 minutes
+## Estimated Duration: 120 minutes
 
 You are a Security Operations Analyst working at a company that implemented Microsoft Sentinel. You have received threat intelligence about a Command and Control (C2 or C&C) technique.  You need to perform a hunt and watch for the threat.
 
@@ -538,6 +538,6 @@ In this task, you will explore using notebooks in Microsoft Sentinel.
 
 ## Summary
 
-In this lab, you will set up an Azure Sentinel workspace and integrate Microsoft Defender for Cloud to enhance security operations. You will connect data sources, simulate attacks to create a real-world threat environment, and utilize KQL to develop custom detections. Additionally, you will automate incident responses using Logic Apps playbooks, effectively demonstrating the management of security incidents through hands-on experience. This lab will showcase the comprehensive approach to threat detection and response within Azure, empowering you to strengthen your organization’s security posture.
+In this lab, you set up an Azure Sentinel workspace and integrated Microsoft Defender for Cloud to enhance security operations. You connected data sources, simulated attacks, and used KQL to create custom detections. You also automated incident responses with Logic Apps playbooks, demonstrating a comprehensive approach to threat detection and response. 
 
 ## You have successfully completed the lab

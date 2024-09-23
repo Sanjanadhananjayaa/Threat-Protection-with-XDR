@@ -1,6 +1,6 @@
 # Lab 01 - Mitigate threats using Microsoft 365 Defender 
 
-## Estimated timing: 60 minutes
+## Estimated Duration: 60 minutes
 
 You're a Security Operations Analyst working at a company that implemented Microsoft Defender XDR solutions. You need to see the alerts in an incident to see the incident's full impact do a root cause investigation and mitigate these alerts using M365 Defender tools.
 
