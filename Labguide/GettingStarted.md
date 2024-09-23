@@ -8,24 +8,24 @@ In this hands-on lab, you will explore the integration of Azure Sentinel, Micros
 
 Understand how to manage security incidents and automate responses using Azure Sentinel, Logic Apps, and Microsoft Defender for Cloud. Gain skills in configuring connectors, creating playbooks, and integrating threat protection across your organization’s security operations. By the end of this lab, you will be able to:
 
-**Explore and Manage Azure Sentinel Workspace**: Learn to navigate and review a pre-configured Sentinel workspace to investigate security incidents, configure automated responses, and analyze data for threat detection.
+- **Explore and Manage Azure Sentinel Workspace**: Learn to navigate and review a pre-configured Sentinel workspace to investigate security incidents, configure automated responses, and analyze data for threat detection.
 
-**Integrate Logic Apps with Threat Protection and XDR**: Understand how to automate threat detection and response workflows by integrating Logic Apps with Threat Protection and Extended Detection and Response (XDR) systems, including configuring triggers and actions.
+- **Integrate Logic Apps with Threat Protection and XDR**: Understand how to automate threat detection and response workflows by integrating Logic Apps with Threat Protection and Extended Detection and Response (XDR) systems, including configuring triggers and actions.
 
-**Enable and Configure Microsoft Defender for Cloud**: Gain practical skills in enabling Microsoft Defender for Cloud, onboarding devices, and integrating them into the Sentinel workspace for real-time monitoring and incident management.
+- **Enable and Configure Microsoft Defender for Cloud**: Gain practical skills in enabling Microsoft Defender for Cloud, onboarding devices, and integrating them into the Sentinel workspace for real-time monitoring and incident management.
 
-**Create and Manage Security Playbooks**: Develop the ability to create and update playbooks within Microsoft Sentinel, streamlining automated responses to security incidents and alerts within your organization’s cloud environment.
+- **Create and Manage Security Playbooks**: Develop the ability to create and update playbooks within Microsoft Sentinel, streamlining automated responses to security incidents and alerts within your organization’s cloud environment.
 
 ## Pre-requisites
 
 Participants should have:
 
-**Familiarity with Azure Sentinel and Defender for Cloud**: Understanding of Microsoft Sentinel and Microsoft Defender for Cloud capabilities, including security incident management and cloud security monitoring.
+- **Familiarity with Azure Sentinel and Defender for Cloud**: Understanding of Microsoft Sentinel and Microsoft Defender for Cloud capabilities, including security incident management and cloud security monitoring.
 
-**Experience with Azure Portal and Logic Apps**: Familiarity with navigating the Azure Portal and using Azure Logic Apps for automation and workflow management.
+- **Experience with Azure Portal and Logic Apps**: Familiarity with navigating the Azure Portal and using Azure Logic Apps for automation and workflow management.
 Basic Security Operations Knowledge: Proficiency in security operations, including working with security incidents, alerts, and configuring threat detection tools.
 
-**Basic Security Operations Knowledge**: Proficiency in security operations, including working with security incidents, alerts, and configuring threat detection tools.
+- **Basic Security Operations Knowledge**: Proficiency in security operations, including working with security incidents, alerts, and configuring threat detection tools.
 
 ## Architecture
 
@@ -40,17 +40,17 @@ In this hands-on lab, the architecture flow encompasses several key components e
 
 The architecture for this lab involves the following key components:
 
-**Azure Sentinel**: Azure Sentinel is a cloud-native SIEM (Security Information and Event Management) solution that provides intelligent security analytics and threat intelligence across your enterprise. It enables you to collect, analyze, and respond to security incidents in real time.
+- **Azure Sentinel**: Azure Sentinel is a cloud-native SIEM (Security Information and Event Management) solution that provides intelligent security analytics and threat intelligence across your enterprise. It enables you to collect, analyze, and respond to security incidents in real time.
 
-**Microsoft Defender for Cloud**: This service enhances your security posture by providing continuous security assessment and recommendations for Azure resources, helping to protect against threats and vulnerabilities.
+- **Microsoft Defender for Cloud**: This service enhances your security posture by providing continuous security assessment and recommendations for Azure resources, helping to protect against threats and vulnerabilities.
 
-**Logic Apps**: Azure Logic Apps is a cloud service that allows you to automate workflows and integrate applications and data across various systems. In this lab, it is used to create automated responses to security incidents and alerts.
+- **Logic Apps**: Azure Logic Apps is a cloud service that allows you to automate workflows and integrate applications and data across various systems. In this lab, it is used to create automated responses to security incidents and alerts.
 
-**Windows Security Event Connector**: This connector facilitates the collection of security events from Windows systems, enabling the monitoring and analysis of potential threats and incidents within the Azure environment.
+- **Windows Security Event Connector**: This connector facilitates the collection of security events from Windows systems, enabling the monitoring and analysis of potential threats and incidents within the Azure environment.
 
-**Microsoft Teams**: Microsoft Teams serves as a collaboration platform where the Security Operations Center (SOC) team can communicate and manage alerts and incidents effectively, streamlining incident response efforts.
+- **Microsoft Teams**: Microsoft Teams serves as a collaboration platform where the Security Operations Center (SOC) team can communicate and manage alerts and incidents effectively, streamlining incident response efforts.
 
-**Playbooks in Microsoft Sentinel**: Playbooks are workflows built using Logic Apps that automate responses to incidents, allowing for quick and consistent actions based on predefined rules and conditions.
+- **Playbooks in Microsoft Sentinel**: Playbooks are workflows built using Logic Apps that automate responses to incidents, allowing for quick and consistent actions based on predefined rules and conditions.
 
 ## Getting Started with the Lab
  
