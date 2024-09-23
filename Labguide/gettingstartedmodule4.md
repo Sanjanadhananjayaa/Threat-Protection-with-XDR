@@ -2,7 +2,7 @@
 ### Overall Estimated Duration: 120 minutes
 ## Overview
 
-In this hands-on lab, you will work as a Security Operations Analyst tasked with performing a threat hunt in Microsoft Sentinel after receiving intelligence about a Command and Control technique. You will integrate data sources, enable Microsoft Defender for Cloud, and simulate various attack techniques such as persistence and privilege escalation. Through custom hunting queries and the use of Sentinel Notebooks, you will identify potential security breaches and investigate incidents. By the end of the lab, you will have practical experience in using Microsoft Sentinel to detect and respond to Command and Control techniques and other advanced attack methods, helping improve your organization’s security posture.
+In this lab, you will work as a Security Operations Analyst tasked with performing a threat hunt in Microsoft Sentinel after receiving intelligence about a Command and Control technique. You will integrate data sources, enable Microsoft Defender for Cloud, and simulate various attack techniques such as persistence and privilege escalation. Through custom hunting queries and the use of Sentinel Notebooks, you will identify potential security breaches and investigate incidents. By the end of the lab, you will have practical experience in using Microsoft Sentinel to detect and respond to Command and Control techniques and other advanced attack methods, helping improve your organization’s security posture.
 
 ## Objective
 
@@ -30,7 +30,7 @@ Participants should have:
 
 ## Architecture
 
-In this hands-on lab, the architecture flow encompasses essential components to enhance threat hunting capabilities. You will connect the Windows security event connector to the Microsoft Sentinel workspace, serving as the centralized hub for monitoring security incidents and executing hunting queries. Integrated with Microsoft Defender for Cloud, this architecture enables real-time threat detection across your environment. Log Analytics is used for querying security events with Kusto Query Language (KQL), allowing for custom hunting queries and alerts. PowerShell scripts simulate attacks to generate log entries, while Notebooks facilitate interactive data exploration. This comprehensive architecture empowers security analysts to proactively hunt for and effectively respond to threats within the organization.
+In this lab, the architecture flow encompasses essential components to enhance threat hunting capabilities. You will connect the Windows security event connector to the Microsoft Sentinel workspace, serving as the centralized hub for monitoring security incidents and executing hunting queries. Integrated with Microsoft Defender for Cloud, this architecture enables real-time threat detection across your environment. Log Analytics is used for querying security events with Kusto Query Language (KQL), allowing for custom hunting queries and alerts. PowerShell scripts simulate attacks to generate log entries, while Notebooks facilitate interactive data exploration. This comprehensive architecture empowers security analysts to proactively hunt for and effectively respond to threats within the organization.
 
 ## Architecture Diagram
 
