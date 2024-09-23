@@ -9,21 +9,13 @@ In this hands-on lab, you will work as a Security Operations Analyst tasked with
 Understand how to configure Microsoft Sentinel for security monitoring and threat detection through the integration of various data sources and tools. Gain skills in simulating real-world attacks, including persistence, Command and Control, and privilege escalation, to better understand threat landscapes. By the end of this lab, you will be able to :
 
 - **Connect the Windows Security Event Connector for log collection**: Learn how to connect the Windows Security Event Connector in Microsoft Sentinel, enabling you to gather security event logs from Windows machines for comprehensive threat monitoring and analysis.
-
 - **Enable Microsoft Defender for Cloud to secure resources**: Gain expertise in enabling Microsoft Defender for Cloud, configuring it to provide continuous security assessments and threat protection for your cloud resources, ensuring a secure and compliant environment.
-
 - **Simulate a Persistence Attack using Registry Key Add**: Understand how to simulate a persistence attack by adding a registry key, providing insights into how attackers maintain access to compromised systems and how you can detect and mitigate these threats.
-
 - **Simulate a Command and Control (C2) Attack using DNS queries**: Learn to simulate a Command and Control (C2) attack via DNS queries, helping you understand how attackers communicate with compromised machines and how to detect these malicious activities within your environment.
-
 - **Simulate a Privilege Elevation Attack by adding a new user**: Develop the ability to simulate a privilege elevation attack by adding a new user account, allowing you to identify how attackers might escalate privileges and compromise sensitive systems.
-
 - **Create a hunting query to detect suspicious PowerShell activity**: Acquire the skills to create a custom hunting query to detect suspicious PowerShell activity, enabling you to proactively hunt for potential threats and investigate malicious behavior in your environment.
-
 - **Develop a near real-time (NRT) query rule for continuous monitoring**: Learn to build and implement a near real-time (NRT) query rule for continuous monitoring of your environment, automating the detection of security threats and responding swiftly to incidents.
-
 - **Execute a search job to detect Command and Control (C2) activity**: Gain hands-on experience in executing search jobs within Microsoft Sentinel to detect C2 activity, improving your ability to track and mitigate threats involving external command and control communications.
-
 - **Explore Microsoft Sentinel Notebooks for advanced threat hunting and analysis**: Master the use of Microsoft Sentinel Notebooks for advanced threat hunting and analysis, leveraging data science techniques to detect, investigate, and respond to sophisticated attacks.
 
 ## Pre-requisites
@@ -31,13 +23,9 @@ Understand how to configure Microsoft Sentinel for security monitoring and threa
 Participants should have:
 
 - **Familiarity with Microsoft Sentinel**: Understanding the core concepts and functionalities of Microsoft Sentinel, including data connectors and threat management.
-
 - **Basic Knowledge of PowerShell**: Proficiency in using PowerShell for script execution and command-line operations.
-  
 - **Understanding of Security Events**: Familiarity with Windows security events and their significance in threat detection and investigation.
-  
 - **Experience with KQL**: Basic knowledge of Kusto Query Language (KQL) to create and run queries in Microsoft Sentinel.
-
 - **Basic Understanding of Cybersecurity Concepts**: Awareness of common attack techniques and defense strategies, particularly regarding Command and Control communications and privilege escalation.
 
 ## Architecture
@@ -54,15 +42,10 @@ In this hands-on lab, the architecture flow encompasses essential components to 
 The architecture for this lab involves the following key components:
 
 - **Microsoft Sentinel**: Microsoft Sentinel is a cloud-native security information and event management (SIEM) solution that provides intelligent security analytics and threat intelligence across the enterprise, enabling proactive threat hunting and incident response.
-
 - **Microsoft Defender for Cloud**: This service offers advanced threat protection for cloud resources, integrating seamlessly with Microsoft Sentinel to enhance security posture through continuous monitoring and threat detection.
-
 - **Log Analytics Workspace**: The Log Analytics workspace collects and analyzes log data, enabling users to perform powerful queries using Kusto Query Language (KQL). It serves as a central repository for security event logs.
-
 - **Windows Security Event Connector**: This connector facilitates the ingestion of security event logs from Windows environments into Microsoft Sentinel, ensuring comprehensive visibility into potential security incidents.
-
 - **PowerShell Scripts**: PowerShell scripts are used to simulate various attack scenarios, generating log entries that can be analyzed during the threat hunting process, helping to train and refine detection capabilities.
-
 - **Notebooks in Microsoft Sentinel**: Notebooks provide an interactive environment for data analysis and visualization, enabling security analysts to explore and share insights derived from security data effectively.
 
 ## Getting Started with the Lab
