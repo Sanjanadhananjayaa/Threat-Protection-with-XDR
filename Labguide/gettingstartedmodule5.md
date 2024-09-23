@@ -23,12 +23,11 @@ Participants should have:
 
 ## Architecture
 
-In this lab, the architecture leverages Microsoft 365 Defender to manage security incidents effectively. You will onboard devices to Microsoft Defender for Endpoint, enabling continuous threat detection. The Microsoft 365 Defender portal serves as the central management interface, where analysts can view alerts, manage incidents, and perform investigations. The incident management system aggregates alerts from various sources, providing context for security events. Additionally, advanced hunting allows for custom queries to investigate incidents further, while automation features streamline response actions to enhance incident management and threat mitigation.
+In this hands-on lab, the architecture leverages Microsoft 365 Defender to manage security incidents effectively. You will onboard devices to Microsoft Defender for Endpoint, enabling continuous threat detection. The Microsoft 365 Defender portal serves as the central management interface, where analysts can view alerts, manage incidents, and perform investigations. The incident management system aggregates alerts from various sources, providing context for security events. Additionally, advanced hunting allows for custom queries to investigate incidents further, while automation features streamline response actions to enhance incident management and threat mitigation.
 
 ## Architecture Diagram
 
 ![](./media/01-3.png)
-
 
 ## Explanation of Components
 
