@@ -87,6 +87,6 @@ You start by initializing the Defender for the Endpoint environment. Next, you o
 
 ## Summary
 
-In this lab, you configured a Logic App with Threat Protection by setting up triggers and actions to receive alerts. In the next lab, you will test the workflow and interact with XDR solutions for automated responses. Click Next to continue with the lab.
+In this lab, you configured a Logic App with Threat Protection by setting up triggers and actions to receive alerts. In the next lab, you will test the workflow and interact with XDR solutions for automated responses. Click **Next** to continue with the lab.
 
 ### You've successfully completed this lab.
