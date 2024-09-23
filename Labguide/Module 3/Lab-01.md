@@ -1,6 +1,6 @@
 # Lab 01 - Conduct attacks
 
-## Lab scenario
+### Estimated timing: 90 minutes
 
 In this lab, you will simulate various attacks to detect and investigate in Microsoft Defender. Tasks include connecting Windows security events, enabling Microsoft Defender for Cloud, performing attacks such as persistence with registry keys, command and control via DNS, privilege escalation with user addition, and creating a playbook in Microsoft Sentinel.
 
@@ -12,8 +12,6 @@ In this lab, you will simulate various attacks to detect and investigate in Micr
 - Task 4: Command and Control Attack with DNS
 - Task 5: Privilege Elevation Attack with User Add
 - Task 5: Playbook Creation
-
-## Estimated timing: 90 minutes
 
 ## Architecture Diagram
 
@@ -308,12 +306,8 @@ In this task, you will create a playbook in Microsoft Sentinel by selecting the 
 
    > **Note**: We dont have to perform any action on logic app designer, please go back to your sentinel workspace and follow the next labguide.
 
+## Summary
 
-## Review
-In this lab you have completed the following tasks:
-- Connect the Windows security event connector
-- Enable Microsoft Defender for Cloud
-- Persistence Attack with Registry Key Add
-- Command and Control Attack with DNS
-- Privilege Elevation Attack with User Add
-- Playbook Creation
+In this lab, you simulated various security attacks using Microsoft Sentinel and Microsoft Defender for Cloud, including persistence via registry keys and command-and-control through DNS. You triggered these attacks to generate security incidents, allowing you to investigate how they are logged and detected within Sentinel. This hands-on experience enhanced your understanding of attack detection mechanisms and the overall security posture of your organization.
+
+## You've successfully completed this lab. Please proceed with the next lab.

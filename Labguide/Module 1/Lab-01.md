@@ -1,6 +1,6 @@
 # Lab 01 - Review and explore sentinel workspace
 
-## Lab scenario
+### Estimated timing: 30 minutes
 
 In this lab, participants will explore a pre-configured Azure Sentinel workspace, investigating security incidents, configuring automated responses, and analyzing data to strengthen threat detection and response capabilities within the Azure environment.
 
@@ -11,8 +11,6 @@ You start by initializing the Defender for the Endpoint environment. Next, you o
  In this lab, you will perform the following:
  - Task 1: Log in to Azure Portal
  - Task 2: Explore Sentinel workspace
-
-## Estimated timing: 30 minutes
 
 ## Architecture Diagram
 
@@ -87,9 +85,8 @@ You start by initializing the Defender for the Endpoint environment. Next, you o
     > - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
     > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-## Review
-In this lab you have completed the following tasks:
- - Log in to Azure Portal
- - Explore Sentinel workspace
+## Summary
+
+In this lab, you explored a pre-configured Azure Sentinel workspace, investigating security incidents, configuring automated responses, and analyzing data for threat detection. You navigated the Azure portal to access the Sentinel workspace, reviewed incidents and alerts, and examined the various tools and capabilities within Sentinel for enhancing security operations. This lab demonstrated how to manage and respond to security threats using Azure Sentinel, showcasing practical steps for incident investigation and automated response configuration.
 
 ### You've successfully completed this lab. Please proceed with the next lab.

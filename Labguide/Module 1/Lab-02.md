@@ -1,6 +1,6 @@
 # Lab 02 - Integrate Logic App with Threat Protection and XDR
 
-## Lab scenario
+## Estimated timing: 120 minutes
 
 The integration of a Logic App with Threat Protection involves configuring triggers and actions to receive alerts, while interaction with XDR solutions requires adding actions to exchange data, perform analyses, and trigger responses. Implementing conditional checks and logic within the Logic App allows for tailored handling of received threat information, ensuring effective responses and workflow execution before thorough testing and deployment to production environments. 
 
@@ -13,7 +13,6 @@ The integration of a Logic App with Threat Protection involves configuring trigg
  - Task 5: Update a Playbook in Microsoft Sentinel
  - Task 6 : Onboard a Device
  
-## Estimated timing: 120 minutes
 
 ## Architecture Diagram
  ![Lab overview.](../media/XDR-Lab-02.png)
@@ -300,13 +299,8 @@ In this task, you will onboard a device to Microsoft Defender for Endpoint using
     ![](../media/Onboard.png) 
 
 
-## Review
- In this lab you have completed the following tasks:
- - Connect the Windows security event connector
- - Enable Microsoft Defender for Cloud
- - Create a Security Operations Center Team in Microsoft Teams
- - Create a Playbook in Microsoft Sentinel
- - Update a Playbook in Microsoft Sentinel
- - Onboard a Device
+## Summary
 
-# You have successfully completed the lab
+In this lab, you integrated a Logic App with Microsoft Sentinel and Microsoft Defender for Cloud to automate threat protection and responses. You connected the Windows Security Event connector, enabled Defender for Cloud, and created a Security Operations Center (SOC) team in Microsoft Teams. You also developed and updated a playbook in Sentinel to automate incident response workflows and onboarded a device to Microsoft Defender for Endpoint. This lab demonstrated how to configure and automate threat detection and response using Logic Apps, Sentinel, and Defender for Cloud.
+
+## You have successfully completed the lab
