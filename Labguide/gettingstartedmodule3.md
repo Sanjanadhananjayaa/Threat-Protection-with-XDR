@@ -12,7 +12,7 @@ Understand how to simulate and detect various cyber attacks using Microsoft Defe
 - **Create Detections**: Gain skills in creating custom analytics rules using KQL queries to identify persistence and privilege elevation attacks. This lab will equip you with the ability to enhance your organization’s threat detection capabilities through effective monitoring and alerting.
 - **Investigate an Incident**: Learn to analyze incidents by reviewing details, managing alerts, and running playbooks to automate response actions. This lab will provide you with practical experience in effective security incident management, ensuring a comprehensive approach to responding to threats.
 
-## Pre-requisites
+## Prerequisites
 
 Participants should have:
 

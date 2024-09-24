@@ -18,7 +18,7 @@ Understand how to configure Microsoft Sentinel for security monitoring and threa
 - **Execute a search job to detect Command and Control (C2) activity**: Gain hands-on experience in executing search jobs within Microsoft Sentinel to detect C2 activity, improving your ability to track and mitigate threats involving external command and control communications.
 - **Explore Microsoft Sentinel Notebooks for advanced threat hunting and analysis**: Master the use of Microsoft Sentinel Notebooks for advanced threat hunting and analysis, leveraging data science techniques to detect, investigate, and respond to sophisticated attacks.
 
-## Pre-requisites
+## Prerequisites
 
 Participants should have:
 
