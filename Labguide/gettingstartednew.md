@@ -30,6 +30,18 @@ By the end of this lab, you will be able to:
 - Understanding of cybersecurity principles and attack methodologies.
 - Access to a Microsoft 365 tenant with appropriate licenses.
 
+### Key features of Threat Protection with XDR
+
+- Integration of Security Tools: XDR integrates multiple security tools and technologies such as endpoint security (EPP/EDR), network security, email security, cloud security, and more into a unified platform.
+- Centralized Visibility and Analytics: XDR collects and aggregates data from diverse security sources, creating a comprehensive and unified view of the organization's security posture.
+- Automated Threat Detection: XDR leverages its analytical capabilities to detect sophisticated threats, including zero-day exploits, malware, ransomware, phishing attacks, and other advanced threats that might evade traditional security measures.
+- Contextualized Insights: XDR provides contextualized insights into detected threats, offering detailed information about the attack chain, affected systems, and the severity of the threat.
+- Response and Remediation: When a threat is identified, XDR facilitates a swift response by automating threat containment, isolation, and remediation actions.
+
+## Sandbox Scenario
+Contoso is a global organization with a complex IT infrastructure that includes a combination of on-premises data centers and cloud-based resources. They are looking to enhance their security posture by deploying Azure Sentinel, Microsoft's cloud-native security information and event management (SIEM), and security orchestration automation and response (SOAR) solutions. Additionally, Contoso aims to onboard its cloud resources and servers to Azure Sentinel to gain better visibility and proactive threat detection and response capabilities.
+
+By implementing a robust log analytics and threat detection program, Contoso aims to proactively identify and mitigate threats, reduce the risk of security breaches, and maintain a strong security posture in an ever-evolving threat landscape. This approach will enable Contoso to stay ahead of potential threats and protect its digital assets effectively.
 
 ## Explanation of Components
 
