@@ -103,17 +103,6 @@ In this task, you will enable and configure Microsoft Defender for Cloud.
 
 1. Close the settings page by selecting the 'X' on the upper right of the page to return to the **Environment settings**. Then, click on the '>' to the left of your subscription.
 
-1. Select the Log Analytics workspace named **loganalyticworkspace** to review the available options and pricing.
-
-    ![Picture 1](./media/Lab-02-task2-subscription.png) 
-
-1. Select **Enable all** (to the right of Select Defender plan), and then choose **Save**. Wait for the *"Microsoft Defender plan for workspace loganalyticworkspace was saved successfully!"* notification to appear.
-
-    >**Note:** If the page is not being displayed, refresh your Edge browser and try again.  
-
-1. Close the Defender plans page by selecting the 'X' in the upper right corner of the page to return to the **Environment settings**.
-
-    ![Picture 1](./media/Lab-02-task2-save.png) 
 
 ### Task 3: Create a Security Operations Center Team in Microsoft Teams.
 
@@ -126,7 +115,11 @@ In this task, you will create a team in Microsoft Teams for use in the lab.
 
    ![Lab overview.](./media/lab2.10.png)
 
-1. select **Teams** on the left menu, then select **Join or create a team**.
+    >**Note:** If you come up with the popup stay signed in to all your apps click on **No, sign in to this app only**.
+
+1. Close any other popup opened and do not switch from classic teams, teams might automatically switch to new version after reopening the teams. please perform the below steps in the classic version as there might be steps vary in new version. 
+
+1. Select **Teams** on the left menu, then select **Join or create a team**.
 
     ![Lab overview.](./media/lab03-task01-teams.png) 
 
@@ -205,7 +198,7 @@ In this task, you will update the new playbook you created with the proper conne
    
     ![Lab overview.](./media/Lab03-task1-001.png) 
 
-1. Select the *first* block **Microsoft Sentinel Incident(Preview)**.
+1. Select the *first* block **Microsoft Sentinel Incident**.
 
 1. Select the **Change connection** link.
    
@@ -226,6 +219,8 @@ In this task, you will update the new playbook you created with the proper conne
 1. Under the **Message** section, type **Entities: (1)** and select **Entities (2)** dynamic content from the right panel.
 
    ![Lab overview.](./media/enti.png)
+
+   >**Note:** Click in the **Thunder Icon** to check fir the entities field content.
 
 1. Select **Save** on the command bar. The Logic App will be used in a future lab.
    

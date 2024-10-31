@@ -1,0 +1,112 @@
+# Threat Protection With XDR
+
+### Overall Estimated Duration: 8 Hours
+
+## Overview
+
+Threat Protection with XDR is a proactive cybersecurity approach that unifies data across multiple security layers—such as endpoints, network, email, and cloud workloads—to detect, analyze, and respond to threats more effectively. XDR integrates diverse security products into a cohesive system, enhancing visibility and automating response actions across the attack surface. By correlating signals from multiple sources, XDR helps security teams to quickly identify and mitigate complex threats, reducing detection and response times while minimizing alert fatigue and improving overall security efficiency.
+
+## Objective
+
+By the end of this lab, you will be able to:
+
+- **Review and explore sentinel workspace** : In this hands-on exercise, you’ll review and explore a Microsoft Sentinel workspace to examine security alerts, incidents, and analytics rules. You'll also explore workbooks and hunting capabilities, gaining insights into effective threat monitoring and response.
+
+- **Integrate Logic App with Threat Protection and XDR** : In this hands-on exercise, integrate Azure Logic Apps with Threat Protection and XDR to automate responses to security alerts. By connecting Logic Apps with XDR, you can streamline threat detection, enable automated workflows, and respond faster to incidents across endpoints, networks, and cloud environments. This integration enhances your security operations by enabling custom workflows that trigger based on XDR alerts, improving response times and efficiency.
+
+- **Conduct attacks** : This hands-on exercise guides you through conducting attacks, providing practical experience with offensive security techniques to understand vulnerabilities and defenses.
+
+- **Create Detections** : In this exercise, you’ll learn how to create threat detections by setting up rules and triggers to identify suspicious activity. You'll configure detection criteria, define alert actions, and test the detection’s effectiveness. This hands-on approach provides practical experience in setting up automated responses to potential threats, helping you strengthen your proactive threat protection skills.
+
+- **Investigate an Incident** : In this hands-on exercise, you'll investigate a cybersecurity incident using tools to analyze and trace suspicious activity. You’ll assess alerts, review logs, and identify threat patterns to determine the incident's scope and impact, enhancing your skills in threat detection and response.
+
+- **Threat Hunting using Notebooks with Microsoft Sentinel** : In this hands-on exercise, you'll use Jupyter notebooks in Microsoft Sentinel for Threat Hunting. This approach allows you to analyze data, visualize patterns, and investigate security threats efficiently by leveraging Python and machine learning to create custom queries and explore anomalies.
+
+- **Mitigate threats using Microsoft 365 Defender** : In this hands-on exercise, you will explore how to mitigate threats using Microsoft 365 Defender. This platform integrates security features across email, endpoints, and cloud applications, providing comprehensive protection against cyber threats. You’ll learn to leverage its AI-driven analytics for threat detection and incident response. By utilizing automated remediation and continuous monitoring, you can effectively identify and respond to potential risks, enhancing your organization’s overall security posture.
+
+## Pre-requisites
+
+- Familiarity with Microsoft 365 Defender and its components.
+- Understanding of cybersecurity principles and attack methodologies.
+- Access to a Microsoft 365 tenant with appropriate licenses.
+
+
+## Explanation of Components
+
+- **Azure Portal** : It is a web-based interface provided by Microsoft for managing and monitoring Azure resources and services. It serves as a central hub for users to create, configure, and manage their Azure resources, applications, and services.
+
+- **Microsoft Defender Portal** : It is a security management platform that integrates various security solutions within the Microsoft ecosystem, enabling organizations to protect their environments across Microsoft 365, Azure, and other platforms. 
+
+## Getting Started with the Lab
+ 
+## Accessing Your Lab Environment
+ 
+Once you're ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser.
+
+   ![](media/labguide-1.png)
+
+## Virtual Machine & Lab Guide
+ 
+Your virtual machine is your workhorse throughout the workshop. The lab guide is your roadmap to success.
+ 
+## Exploring Your Lab Resources
+ 
+To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab.
+ 
+   ![Explore Lab Resources](media/env-1.png)
+ 
+## Utilizing the Split Window Feature
+ 
+For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the Top right corner.
+ 
+ ![Use the Split Window Feature](media/spl.png)
+ 
+## Managing Your Virtual Machine
+ 
+Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
+ 
+![Manage Your Virtual Machine](media/res.png)
+
+## Lab Validation
+
+1. After completing the task, hit the **Validate** button under Validation tab integrated within your lab guide. If you receive a success message, you can proceed to the next task, if not, carefully read the error message and retry the step, following the instructions in the lab guide.
+
+   ![Inline Validation](media/inline-validation.png)
+
+1. You can also validate the task by navigating to the **Lab Validation** tab, from the upper right corner in the lab guide section.
+
+   ![Lab Validation](media/lab-validation.png)
+
+## Lab Duration Extension
+
+1. To extend the duration of the lab, kindly click the **Hourglass** icon in the top right corner of the lab environment. 
+
+    ![Manage Your Virtual Machine](media/gext.png)
+
+    >**Note:** You will get the **Hourglass** icon when 10 minutes are remaining in the lab.
+
+2. Click **OK** to extend your lab duration.
+ 
+   ![Manage Your Virtual Machine](media/gext2.png)
+
+3. If you have not extended the duration prior to when the lab is about to end, a pop-up will appear, giving you the option to extend. Click **OK** to proceed.
+
+1. Click **"Next"** from the bottom right corner to embark on your Lab journey!
+
+   ![Launch Azure Portal](media/next1.png)
+
+
+## Support Contact
+
+The CloudLabs support team is available 24/7, 365 days a year, via email and live chat to ensure seamless assistance at any time. We offer dedicated support channels tailored specifically for both learners and instructors, ensuring that all your needs are promptly and efficiently addressed.
+
+Learner Support Contacts:
+
+- Email Support: cloudlabs-support@spektrasystems.com
+- Live Chat Support: https://cloudlabs.ai/labs-support
+
+Now, click on Next from the lower right corner to move on to the next page.
+
+## Happy Learning!!
+
+

@@ -28,6 +28,8 @@ In this task, you will create a detection for the first attack of the previous e
 
 1. Select **Logs** from the *General* section.
 
+    >**Note:** You might see some popup after clicking on **Logs**. close all Popups by clicking on **X** Icon.
+
 1. **Run** the following KQL Statement again to recall the tables where we have this data:
 
     ```KQL
@@ -62,12 +64,12 @@ In this task, you will create a detection for the first attack of the previous e
     |---|---|
     |Name|Startup RegKey|
     |Description|Startup RegKey in c:\temp|
-    |Tactics|Persistence|
+    |MITRE ATT&CK|Persistence|
     |Severity|High|
 
 1. Select **Next: Set rule logic >** button.
 
-1. On the *Set rule logic* tab, the *Rule query* should be populated already with your KQL query, as well as the entities under *Alert enrichment - Entity mapping*.
+1. On the *Set rule logic* tab, the *Rule query* should be populated already with your KQL query, as well as the entities under *Alert enrichment - Entity mapping*, select **+ Add New Entity**.
 
     |Entity|Identifier|Data Field|
     |:----|:----|:----|
@@ -113,7 +115,7 @@ In this task, you will create a detection for the first attack of the previous e
 
     ![Lab overview.](./media/Lab06-task03-automationrule.png)
 
-1. Select the **Next: Review >** button.
+1. Select the **Next: Review + Create** button.
   
 1. On the *Review and create* tab, select the **Save** button to create the new Scheduled Analytics rule.
 
@@ -181,7 +183,7 @@ In this task, you will create a detection for the second attack of the previous 
     |---|---|
     |Name|**SecurityEvent Local Administrators User Add (1)**|
     |Description|**User added to Local Administrators group (2)**|
-    |Tactics|**Privilege Escalation (3)**|
+    |MITRE ATT&CK|**Privilege Escalation (3)**|
     |Severity|**High (4)**|
 
 1. Select **Next: Set rule logic > (5)** button. 
@@ -189,7 +191,7 @@ In this task, you will create a detection for the second attack of the previous 
    ![](./media/6-5.png)
 
 
-1. On the *Set rule logic* tab, the *Rule query* should be populated already with your KQL query, and add the details for entities under *Alert enrichment - Entity mapping*.
+1. On the *Set rule logic* tab, the *Rule query* should be populated already with your KQL query, and add the details for entities under *Alert enrichment - Entity mapping*, select **+ Add New Entity**.
 
     |Entity|Identifier|Data Field|
     |:----|:----|:----|
@@ -224,7 +226,7 @@ In this task, you will create a detection for the second attack of the previous 
 
    ![](./media/6-7.png)
 
-1. Select the **Next: Review and create >** button.
+1. Select the **Next: Review + create >** button.
   
 1. On the *Review and create* tab, select the **Save** button to create the new Scheduled Analytics rule.
 

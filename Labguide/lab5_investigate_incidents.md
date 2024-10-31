@@ -52,6 +52,8 @@ In this task, you will investigate an incident.
 
     ![Lab overview.](./media/7-4.png)
 
+    >**Note**: If you did not see any playbook no need to worry there might be the case where sentinel does not reflect the playbook, we can proceed with the next step
+
 1. Close the *Alert playbooks* blade by selecting the **x** icon in the top right.
 
 1. Review the **Entities** window. At least the *Host* entity that we mapped within the KQL query from the previous exercise should appear. **Hint:** If no entities are shown, refresh the page.
@@ -80,7 +82,7 @@ In this task, you will investigate an incident.
 
     ![Lab overview.](./media/assignedtome.png)
 
-1. Expand the left blade by selecting the **>>** icon. and then select the **Investigate** button.
+1. Select the **Investigate** button.
 
     ![Lab overview.](./media/7-10.png)
 
@@ -99,8 +101,6 @@ In this task, you will investigate an incident.
 1. Select **Timeline** button. Hover the incidents and see which things on the graph occurred at what point in time.
 
    ![Lab overview.](./media/7-12.png)
-   
-1. Select **Entities** button and review the *Entities* and *Alerts* related to *svm-server*.
 
 1. Close the investigation graph by selecting the **X** icon at the top right of the page.
 
