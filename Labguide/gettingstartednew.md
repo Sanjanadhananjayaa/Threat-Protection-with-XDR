@@ -51,7 +51,7 @@ The architecture diagram outlines a sequence of labs for implementing and config
 
 ## Architecture Diagram
 
-  ![](../Media/thread.png)
+  ![](media/thread.png)
 
 ## Explanation of Components
 
