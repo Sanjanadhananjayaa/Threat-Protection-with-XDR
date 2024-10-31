@@ -50,7 +50,7 @@ The architecture diagram outlines a series of labs focused on configuring and ut
 
 ## Architecture Diagram
 
-  ![](media/thread.png)
+  ![](media/thread1.png)
 
 ## Explanation of Components
 
