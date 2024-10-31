@@ -19,7 +19,7 @@ The integration of a Logic App with Threat Protection involves configuring trigg
 
 ### Task 1: Connect the Windows security event connector
 
-1. In the Search bar of the Azure portal, type *Microsft Sentinel*, then select **Microsoft Sentinel**.
+1. In the Search bar of the Azure portal, type *Microsft Sentinel (1)*, then select **Microsoft Sentinel (2)**.
 
     ![](./media/09.png) 
 
@@ -27,65 +27,59 @@ The integration of a Logic App with Threat Protection involves configuring trigg
 
     ![](./media/Lab01-task2-loganalyticworkspace.png) 
 
-1. Navigate to the left menu and go to the Content Management section; there, select **Content Hub (1)**. On the Content Hub page, locate **Windows Security Events (2)**, and then **select (3)** it. Finally, click on **Install (4)**.
+1. Navigate to the left menu and go to the *Content Management* section, below that select **Content Hub (1)**. On the Content Hub page, locate **Windows Security Events (2)**, and then **select (3)** it. Finally, click on **Install (4)**.
 
     ![Picture 1](./media/Lab02-task1-contenthub.png)  
 
-1. After receiving the notification of a successful installation, return to the Data Connector page and click on the refresh button to ensure that the changes take effect.
+1. After receiving the notification of a successful installation, return to the **Data Connector** page under *Configuration* and click on the refresh button to ensure that the changes take effect.
 
 1. You should observe two options: **Security Events Via Legacy Agent** and **Windows Security Event Via AMA**.
 
-1. Choose **Security Events Via Legacy Agent**, and then click on **Open Connector Page**.
+1. Choose **Security Events Via Legacy Agent (1)**, and then click on **Open Connector Page (2)**.
 
-    ![Picture 1](./media/lab02-task01-events.png) 
+    ![Picture 1](./media/xdr8.png) 
    
 8. In the configuration section, opt for **Install Agent on Azure Windows Virtual Machine (1)**, and then choose **Download & Install Agent for Azure Windows Virtual Machines (2)**.
 
-    ![Picture 1](./media/lab02-task01-installagent.png) 
+    ![Picture 1](./media/xdr9.png) 
 
-9. Select the **svm-<inject key="DeploymentID" enableCopy="false" />** virtual machine and click on connect.
+9. Select the **svm-<inject key="DeploymentID" enableCopy="false" />** virtual machine. 
 
-    ![Picture 1](./media/lab2-task1-svm.png) 
+    ![Picture 1](./media/xdr10.png) 
         
-10. Once **connected (1)**, select the **Virtual Machine (2)** link from the top.
+10. Click on **Connect (1)**. Once **connected**, select the **Virtual Machine (2)** link from the top.
 
-    ![Picture 1](./media/lab2-task1-svm1.png) 
+    ![Picture 1](./media/xdr11.png) 
 
 11. On the virtual machine page select the **s2vm-<inject key="DeploymentID" enableCopy="false" />** virtual machine and click on connect. wait until get connected.
 
-    ![Picture 1](./media/lab2-task1-s2vm.png)
+    ![Picture 1](./media/xdr12.png)
 
-11. Then, come back to the Configuration and scroll down a bit. You can find **Select which events to stream**. Click on **All Events**.
+11. Then, come back to the Configuration and scroll down a bit. You can find **Select which events to stream**. Select **All Events (1)** and then click on **Apply changes (2).**
 
-    ![Picture 1](./media/lab2-task1-streamevents.png) 
+    ![Picture 1](./media/xdr13.png) 
 
-12. Click on Apply Changes now. If you refresh the data connector page, you can see the status Connected for **Security Events Via Legacy Agent**.
+12. If you refresh the data connector page, you can see the status Connected for **Security Events Via Legacy Agent**.
 
-    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-    > - Click the Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation tab.
-    > - Hit the Validate button for the corresponding task.
-    > - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
-
-    <validation step="269f3cda-2c56-4a45-9fa3-947da8a7e1b0" />
+    ![Picture 1](./media/xdr14.png) 
 
 ### Task 2: Enable Microsoft Defender for Cloud
 
 In this task, you will enable and configure Microsoft Defender for Cloud.
 
-1. In the search bar of the Azure portal, type *Defender*, then select **Microsoft Defender for Cloud**.
+1. In the search bar of the Azure portal, type *Defender (1)*, then select **Microsoft Defender for Cloud (2)**.
 
-    ![Picture 1](./media/Lab-02-task2-search.png) 
+    ![Picture 1](./media/xdr15.png) 
 
 1. Click the left menu, and then click on **Getting Started**.
 
-1. On the **Getting Started** page, under the **Upgrade** tab, ensure your subscription is selected, and then click the **Upgrade** button at the bottom of the page. Please wait for 2-5 minutes for the process to complete, as it may take some time.
+1. On the **Getting Started (1)** page, under the **Upgrade (2)** tab, ensure your *Subscription and loganalyticworkspace* is selected **(3)**, and then click the **Upgrade (4)** button at the bottom of the page. Please wait for 2-5 minutes for the process to complete, as it may take some time.
 
-    ![Picture 1](./media/Lab-02-task2-upgrade.png) 
+    ![Picture 1](./media/xdr17.png) 
 
-4. In the left menu for Microsoft Defender for Cloud, under Management, select **Environment settings**.
+4. In the left menu for Microsoft Defender for Cloud, under Management. Select **Environment settings (1)** then click on the subscription (or its equivalent name in your language). **(2)**
 
-1. Click on the subscription (or its equivalent name in your language). 
+    ![Picture 1](./media/xdr18.png) 
 
 1. Review the Azure resources that are now protected with the Defender for Cloud plans.
 
@@ -93,15 +87,21 @@ In this task, you will enable and configure Microsoft Defender for Cloud.
  
     ![Picture 1](./media/Lab-02-task2-reviewplans.png) 
 
-1. Review the monitoring extensions and confirm that **Log Analytics agent/Azure Monitor agent** is **On**. Click Continue or close the Settings & Monitoring page by selecting the 'X' on the upper right of the page.
+1. Review the monitoring extensions and confirm that **Log Analytics agent/Azure Monitor agent** is **On (1)**. Then click on **Edit configuration (2).**
 
-    ![Picture 1](./media/Log_Analytics_Enable_1_new.png) 
+    ![Picture 1](./media/xdr19.png) 
 
-1. Select the newly created Log Ananytics workspace which will gather all security events data of the machines to analyze. click on Apply and Continue. Click on Save for the changes to take affect.
+1. On the **Auto-provision configuration** page, choose the **Custom workspace (1)** then select the newly created Log Ananytics workspace **(2)** which will gather all security events data of the machines to analyze. Click on **Apply. (3)** 
 
-   ![Picture 1](./media/log1.png)
+   ![Picture 1](./media/xdr20.png)
 
-1. Close the settings page by selecting the 'X' on the upper right of the page to return to the **Environment settings**. Then, click on the '>' to the left of your subscription.
+1. Click on **Continue** and then **Save** for the changes to take affect.
+
+   ![Picture 1](./media/xdr21.png)
+
+1. Close the settings page by selecting the 'X' on the upper right of the page to return to the **Environment settings**. Then, click on the **>** to the left of your subscription.
+
+   ![Picture 1](./media/xdr22.png)
 
 
 ### Task 3: Create a Security Operations Center Team in Microsoft Teams.
@@ -119,11 +119,11 @@ In this task, you will create a team in Microsoft Teams for use in the lab.
 
 1. Close any other popup opened and do not switch from classic teams, teams might automatically switch to new version after reopening the teams. please perform the below steps in the classic version as there might be steps vary in new version. 
 
-1. Select **Teams** on the left menu, then select **Join or create a team**.
+1. Select **Teams (2)** on the left menu, then select **Join or create a team (2)**.
 
-    ![Lab overview.](./media/lab03-task01-teams.png) 
+    ![Lab overview.](./media/xdr40.png) 
 
-1. Select the **Create Team** button in the main window.
+1. Select the **Create Team** button from the drop-down.
 
 1. Select the **From scratch** button.
 
@@ -133,17 +133,19 @@ In this task, you will create a team in Microsoft Teams for use in the lab.
 
     ![Lab overview.](./media/lab03-task01-private2.png) 
 
-1. Give the team the name: **SOC** and select the **Create** button.
+1. Give the team the name: **SOC (1)** and select the **Create (2)** button.
 
-    ![Lab overview.](./media/lab03-task01-SOC.png)  
+    ![Lab overview.](./media/xdr41.png)  
 
 1. In the Add members to SOC screen, select the **Skip** button. 
 
-1. Scroll down the Teams blade to locate the newly created SOC team, select the ellipsis **(...)** on the right side of the name and select **Add channel**.
+1. Scroll down the Teams blade to locate the newly created SOC team, select the ellipsis **(...) (1)** on the right side of the name and select **Add channel (2)**.
    
-    ![Lab overview.](./media/Lab03-task1-003.png) 
+    ![Lab overview.](./media/xdr42.png) 
 
-1. Enter a channel name as **New Alerts** then select the **Add** button.
+1. Enter a channel name as **New Alerts (1)** then select the **Add (2)** button.
+
+    ![Lab overview.](./media/xdr30.png) 
 
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
    - If you receive a success message, you can proceed to the next task.
@@ -168,13 +170,17 @@ In this task, you will create a Logic App that is used as a Playbook in Microsof
 
     ![Lab overview.](./media/lab03-task02-githubplaybook.png) 
 
-1. Make sure your Azure Subscription is selected.
+1. On the **Custom deployment** page provide the following details.
 
-1. For Resource Group, select **threat-xdr** and select **OK**.
+    - Make sure your Azure Subscription is selected. **(1)**
 
-1. Leave **(US) East US** as the default value for *Region*.
+    - For Resource Group, select **threat-xdr** **(2)** 
 
-1. Rename the *Playbook Name* to **PostMessageTeams-OnIncident** and select **Review + create**.
+    - Leave **(US) East US** as the default value for *Region*. **(3)**
+
+    - Rename the *Playbook Name* to **PostMessageTeams-OnIncident (4)** and select **Review + create (5)**.
+
+      ![Lab overview.](./media/xdr31.png) 
 
 1. Now select **Create**.
 
@@ -184,11 +190,15 @@ In this task, you will create a Logic App that is used as a Playbook in Microsof
 
 In this task, you will update the new playbook you created with the proper connection information.
 
-1. In the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel**.
+1. In the Search bar of the Azure portal, type *Microsft Sentinel (1)*, then select **Microsoft Sentinel (2)**.
 
-1. Select your Microsoft Sentinel Workspace **loganalyticworkspace**.
+    ![](./media/09.png) 
 
-1. Select the **Automation** from the Configuration area and then select the **Active Playbooks** tab, If **PostMessageTeams-OnIncident** is not visiable refresh the page and check.
+1. Select the pre-created Sentinel **loganalyticworkspace** from the available list.
+
+    ![](./media/Lab01-task2-loganalyticworkspace.png)
+
+1. Select the **Automation (1)** from the Configuration area and then select the **Active Playbooks (2)** tab, If **PostMessageTeams-OnIncident (3)** is not visiable refresh the page and check.
 
 1. Select the **PostMessageTeams-OnIncident** playbook and click on it to go to the logic App page.
 
@@ -200,31 +210,48 @@ In this task, you will update the new playbook you created with the proper conne
 
 1. Select the *first* block **Microsoft Sentinel Incident**.
 
+    ![Lab overview.](./media/xdr32.png) 
+
 1. Select the **Change connection** link.
    
-   ![Lab overview.](./media/Lab03-task1-002.png) 
+   ![Lab overview.](./media/xdr33.png) 
 
-1. Select **Add new** and select **Sign in**. In the new window, select your Azure subscription admin credentials when prompted. The last line of the block should now read “Connected to your-admin-username”.
+1. Select **Add new.**
+
+   ![Lab overview.](./media/xdr34.png) 
+
+1. Select **Sign in**. In the new window, select your Azure subscription admin credentials when prompted. The last line of the block should now read “Connected to your-admin-username”.   
 
 1. Now select the *second block*, **Connections**.
 
-1. Select **Add new** and select your Azure admin credentials when prompted. The last line of the block should now read “Connected to your-admin-username”.
+   ![Lab overview.](./media/xdr35.png) 
+
+1. Click on **Change connection.**  
+
+   ![Lab overview.](./media/xdr36.png) 
+
+1. Select **Add new** then **Sign in** and select your Azure admin credentials when prompted. The last line of the block should now read “Connected to your-admin-username”.
    
-    ![Lab overview.](./media/Lab03-task1-004.png) 
+1. The block has now been renamed to **Post a message (V3)**, at the end of the Team field, select the X to clear the contents. The field is changed to a drop-down with a listing of the available Teams from Microsoft Teams. Select **SOC (1)**.
 
-1. The block has now been renamed to **Post a message (V3)**, at the end of the Team field, select the X to clear the contents. The field is changed to a drop-down with a listing of the available Teams from Microsoft Teams. Select **SOC**.
+1. Do the same for the Channel field, select the **X** at the end of the field to clear the contents. The field is changed to a drop-down with a listing of the Channels of the SOC Teams. Select **New Alerts (2)**. 
 
-1. Do the same for the Channel field, select the **X** at the end of the field to clear the contents. The field is changed to a drop-down with a listing of the Channels of the SOC Teams. Select **New Alerts**. 
+   ![Lab overview.](./media/xdr37.png)    
 
-1. Under the **Message** section, type **Entities: (1)** and select **Entities (2)** dynamic content from the right panel.
 
-   ![Lab overview.](./media/enti.png)
+1. Under the **Message** section, type **Entities: (1)** and click on the **dynamic content (2)** icon.
+
+   ![Lab overview.](./media/xdr43.png)    
+
+1. Select **Entities (2)** dynamic content from the right panel.
+
+   ![Lab overview.](./media/xdr38.png)
 
    >**Note:** Click in the **Thunder Icon** to check fir the entities field content.
 
 1. Select **Save** on the command bar. The Logic App will be used in a future lab.
    
-   ![Lab overview.](./media/Lab03-task1-005.png)
+   ![Lab overview.](./media/xdr39.png)
    
 ## Review
  In this lab you have completed the following tasks:

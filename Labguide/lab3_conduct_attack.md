@@ -51,15 +51,15 @@ You are going to simulate the attacks that you will later use to detect and inve
 
 1. Copy and run this command to create a script that will simulate a DNS query to a C2 server:
 
-    ```CommandPrompt
-    notepad c2.ps1
-    ```
+     ```CommandPrompt
+     notepad c2.ps1
+     ```
 
 1. Select **Yes** to create a new file and copy the following PowerShell script into *c2.ps1*.
 
     >**Note:** Pasting into the virtual machine file might not show the full script length. Make sure the script matches the instructions within the *c2.ps1* file.
 
-    ```PowerShell
+     ```PowerShell
     param(
         [string]$Domain = "microsoft.com",
         [string]$Subdomain = "subdomain",
@@ -99,21 +99,21 @@ You are going to simulate the attacks that you will later use to detect and inve
         Start-Sleep -Seconds $Jitter
     }
     Until ($TimeNow -ge $RunEnd)
-    ```
+     ```
 
 1. In the Notepad menu, select **File** and then **Save**. 
 
 1. Go back to the Command Prompt window, enter the following command and press Enter.
 
-    ```CommandPrompt
-    Start PowerShell.exe -file c2.ps1
-    ```
+     ```CommandPrompt
+     Start PowerShell.exe -file c2.ps1
+     ```
     
-    ![Lab overview.](./media/cmd.png)
+     ![Lab overview.](./media/cmd.png)
    
-    >**Note:** You will see DNS resolve errors. This is expected.
+     >**Note:** You will see DNS resolve errors. This is expected.
 
-    >**Important**: Do not close these windows. Let this PowerShell script run in the background. The command needs to generate log entries for some hours. You can proceed to the next task and next exercises while this script runs. The data created by this task will be used in the Threat Hunting lab later. This process will not create substantial amounts of data or processing.
+     >**Important**: Do not close these windows. Let this PowerShell script run in the background. The command needs to generate log entries for some hours. You can proceed to the next task and next exercises while this script runs. The data created by this task will be used in the Threat Hunting lab later. This process will not create substantial amounts of data or processing.
 
 ### Task 3: Privilege Elevation Attack with User Add
 
@@ -121,33 +121,37 @@ You are going to simulate the attacks that you will later use to detect and inve
 
 1. In Azure portal, Search for **Virtual machines (1)** and select **Virtual machines (2)**.
 
-   ![VMrdp](./media/vm.png)
+    ![VMrdp](./media/vm.png)
 
 1. Select the virtual machine **s2vm-<inject key="DeploymentID" enableCopy="false" />** from the list.
    
-   ![VMrdp](./media/vm1.png)
+    ![VMrdp](./media/xdr26.png)
 
-1. At the beginning of the virtual machine page, click on **Connect**, and from the drop-down select **Connect**.
+1. At the beginning of the virtual machine page, click on **Connect (1)**, and from the drop-down select **Connect (2)**.
 
-   ![VMrdp](./media/vm2.png)
+    ![VMrdp](./media/xdr27.png)
 
 1. On the Connect to Virtual Machine page, select RDP, Choose the option to **Download RDP File.**
 
-   ![VMrdp](./media/vm3.png)
+    ![VMrdp](./media/xdr28.png)
 
-    >**Note:** You might see the warning option while downloading the rdp file. please click on keep.
+     >**Note:** You might see the warning option while downloading the rdp file. please click on **keep.**
 
 1. Open the downloaded RDP file from the downloads.
 
-   ![VMrdp](./media/vm4.png)
+    ![VMrdp](./media/xdr23.png)
 
 1. Select Connect when prompted. You will get a warning that the .rdp file is from an unknown publisher. This is expected. In the Remote Desktop Connection window, select Connect to continue.
 
-   ![VMrdp](./media/vm8.png)
+    ![VMrdp](./media/vm8.png)
    
-1. In the Windows Security window, select More Choices and then Use a different account. Enter **Username:** <inject key="Labvm Admin Username"></inject> and **Password:** <inject key="Labvm Admin Password"></inject> and then select OK.
+1. In the Windows Security window, select **More Choices.**
 
-   ![VMrdp](./media/vm6.png)
+    ![VMrdp](./media/xdr24.png)
+
+ 1. Then Use a different account. Enter **Username:** <inject key="Labvm Admin Username"></inject> **(1)** and **Password:** <inject key="Labvm Admin Password"></inject> **(2)** and then select **OK (3).**
+
+    ![VMrdp](./media/vm6.png)
 
 1. Select **Yes** to verify the identity of the virtual machine and finish logging on.
 
@@ -155,32 +159,34 @@ You are going to simulate the attacks that you will later use to detect and inve
 
 1. You should now be connected to the virtual machine via Remote Desktop.
 
-1. In the search of the taskbar of your **s2vm-<inject key="DeploymentID" enableCopy="false" />** VM, enter *Command*. A Command Prompt will be displayed in the search results. Right-click on the Command Prompt and select **Run as Administrator**. Select **Yes** in the User Account Control window that allows the app to run.
+1. In the search of the taskbar of your **s2vm-<inject key="DeploymentID" enableCopy="false" />** VM, enter **Command (1)**. A Command Prompt will be displayed in the search results. Right-click on the Command Prompt and select **Run as Administrator (2)**. Select **Yes** in the User Account Control window that allows the app to run.
+
+    ![VMrdp](./media/xdr25.png)
 
 1. In the Command Prompt, create a Temp folder in the root directory. Remember to press Enter after the last row:
 
-    ```CommandPrompt
-    cd \
-    ```
-    ```CommandPrompt
-    mkdir temp
-    ```
-    ```CommandPrompt
-    cd temp
-    ```
-    >**Note**: If there is any error on temp directory already exists, please perform the next steps.  
+     ```CommandPrompt
+     cd \
+     ```
+     ```CommandPrompt
+     mkdir temp
+     ```
+     ```CommandPrompt
+     cd temp
+     ```
+     >**Note**: If there is any error on temp directory already exists, please perform the next steps.  
 
 1. Copy and run this command to simulate the creation of an Admin account. Remember to press Enter after the last row:
 
-    ```CommandPrompt
-    net user theusernametoadd /add
-    ```
-    ```CommandPrompt
-    net user theusernametoadd ThePassword1!
-    ```
-    ```CommandPrompt
-    net localgroup administrators theusernametoadd /add
-    ```
+     ```CommandPrompt
+     net user theusernametoadd /add
+     ```
+     ```CommandPrompt
+     net user theusernametoadd ThePassword1!
+     ```
+     ```CommandPrompt
+     net localgroup administrators theusernametoadd /add
+     ```
 
 ## Review
 In this lab you have completed the following tasks:

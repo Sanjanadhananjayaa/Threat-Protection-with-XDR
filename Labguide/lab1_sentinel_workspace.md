@@ -47,7 +47,7 @@ You start by initializing the Defender for the Endpoint environment. Next, you o
 
  Sentinel Workspace is a centralized platform by Microsoft Azure designed for managing, investigating, and responding to security threats across your organization's cloud services.
 
-1. In the Search bar of the Azure portal, type *Microsft Sentinel*, then select **Microsoft Sentinel**.
+1. In the Search bar of the Azure portal, type *Microsft Sentinel (1)*, then select **Microsoft Sentinel (2)**.
 
    ![](./media/09.png)
 
@@ -59,19 +59,19 @@ You start by initializing the Defender for the Endpoint environment. Next, you o
 
    ![](./media/lab01-task2-overview.png)
 
-1. Navigate to the 'Data connectors' section in the left sidebar and examine the currently configured connectors for collecting security-related data.
+1. Navigate to the **Data connectors** section in the left sidebar under *Configuration* and examine the currently configured connectors for collecting security-related data.
 
-   ![](./media/dataconnector.png)
+   ![](./media/xdr2.png)
 
 1. In the **threat management** section, choose **Incidents** from the left panel to assess detected security incidents and alerts.
 
-1. Click on the status filter beside the search space, and then select the **Select all** checkbox to view all new, active, and closed incidents.
+1. Click on the **Status (1)** filter beside the search space, and then select the **Select all (2)** checkbox to view all new, active, and closed incidents. Then click on **OK (3)**
 
-   ![](./media/Lab01-task2-selectall.png)
+   ![](./media/xdr3.png)
 
-1. Select the **Informational** incident from the list to view details and take necessary actions.
+1. Select the **Informational (1)** incident from the list, then click on **View full details (2)** to view details and take necessary actions.
 
-   ![](./media/Lab01-task2-informational.png) 
+   ![](./media/xdr4.png) 
 
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
    - If you receive a success message, you can proceed to the next task.
@@ -100,30 +100,30 @@ In this task, you will onboard a device to Microsoft Defender for Endpoint using
 
     >**Note:** Take a moment to allow the option panel to fully load on the security portal.
 
-1. Navigate to **Settings** in the left menu bar, and then, on the Settings page, choose **Endpoints**.
+1. Navigate to **Settings (1)** in the left menu bar, and then, on the Settings page, choose **Endpoints (2)**.
 
-    ![](./media/lab01-task3-settings.png)
+    ![](./media/xdr44.png)
 
    >**Note:** If you face any issues while opening the Endpoint. follow the url: **https://security.microsoft.com/securitysettings/endpoints/onboarding**
 to access the endpoint resource
    
-1. Navigate to the **Onboarding** option in the Device Management section.
+1. Navigate to the **Onboarding (1)** option in the *Device Management section.*
 
-1. In the '1. Onboard a device' section, ensure that 'Local Script (for up to 10 devices)' is visible in the Deployment method drop-down, then click the **Download onboarding package** button.
+1. In the **1. Onboard a device** section, ensure that **Local Script (for up to 10 devices) (2)** is visible in the Deployment method drop-down, then click the **Download onboarding package (3)** button.
 
     ![](./media/lab01-task3-localscript.png) 
 
-1. In the *Downloads* pop-up, use your mouse to select the 'WindowsDefenderATPOnboardingPackage.zip' file, and then click on the folder icon for **Show in folder**. **Hint:** If you can't locate it, the file should be in the 'c:\users\admin\downloads' directory.
+1. In the *Downloads* pop-up, use your mouse to select the **WindowsDefenderATPOnboardingPackage.zip** file, and then click on the folder icon for **Show in folder**. **Hint:** If you can't locate it, the file should be in the 'c:\users\admin\downloads' directory.
 
-    ![](./media/lab01-task3-downloadspopup.png)
+    ![](./media/xdr5.png)
 
 1. Right-click on the downloaded zip file, choose **Extract All...**, ensure that **Show extracted files when complete** is checked, and then click **Extract**.
 
     ![](./media/lab01-task3-zipfile.png) 
 
-1. Right-click on the extracted file 'WindowsDefenderATPLocalOnboardingScript.cmd' and choose **Properties**. Tick the **Unblock** checkbox located in the bottom right of the Properties window, and then click **OK**.
+1. Right-click on the extracted file **WindowsDefenderATPLocalOnboardingScript.cmd** and choose **Properties**. Tick the **Unblock (1)** checkbox located in the bottom right of the Properties window, and then click **OK (2)**.
 
-    ![](./media/sc200-mod2-unblock.png) 
+    ![](./media/xdr7.png) 
 
 1. Once again, right-click on the extracted file **WindowsDefenderATPLocalOnboardingScript.cmd** and opt for **Run as Administrator**. **Hint:** If the Windows SmartScreen window appears, click on **More info**, and then select **Run anyway**.
     
@@ -133,11 +133,13 @@ to access the endpoint resource
 
     ![](./media/SC-200-img25.png)
 
-1. Back on the Onboarding page within the Microsoft 365 Defender portal, navigate to the "2. Run a detection test" section, and copy the detection test script by clicking the **Copy** button.
+1. Back on the Onboarding page within the Microsoft 365 Defender portal, navigate to the **2. Run a detection test** section, and copy the detection test script by clicking the **Copy** button.
 
     ![](./media/lab01-task3-runscript.png) 
 
-1. In the Windows search bar of the virtual machine, type **CMD**, and choose **Run as Administrator** from the right pane for the Command Prompt app.
+1. In the Windows search bar of the virtual machine, type **CMD (1)**, and choose **Run as Administrator (2)** from the right pane for the Command Prompt app.
+
+    ![](./media/xdr6.png) 
 
 1. When the "User Account Control" window appears, select **Yes** to allow the app to run. 
 
