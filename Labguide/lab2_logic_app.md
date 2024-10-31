@@ -236,8 +236,7 @@ In this task, you will update the new playbook you created with the proper conne
 
 1. Do the same for the Channel field, select the **X** at the end of the field to clear the contents. The field is changed to a drop-down with a listing of the Channels of the SOC Teams. Select **New Alerts (2)**. 
 
-   ![Lab overview.](./media/xdr37.png)    
-
+    ![Lab overview.](./media/xdr37.png)    
 
 1. Under the **Message** section, type **Entities: (1)** and click on the **dynamic content (2)** icon.
 
