@@ -38,12 +38,13 @@ You are going to simulate the attacks that you will later use to detect and inve
     REG ADD "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" /V "SOC Test" /t REG_SZ /F /D "C:\temp\startup.bat"
     ```
 
-    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-    > - Click the Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation tab.
-    > - Hit the Validate button for the corresponding task.
-    > - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
-
+   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   - If you receive a success message, you can proceed to the next task.
+   - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+ 
+   <validation step="8f13852e-0b9e-4064-babe-3918fddfd6c3" />
+   
 ### Task 2: Command and Control Attack with DNS
 
 >**Note:** Perform this task in your LAB-VM (svm).

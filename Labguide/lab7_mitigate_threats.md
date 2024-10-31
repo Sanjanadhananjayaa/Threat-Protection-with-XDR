@@ -41,10 +41,11 @@ You're a Security Operations Analyst working at a company that implemented Micro
 1. Select **Create** and click on **Yes**. 
 
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-    > - Click the Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation tab.
-    > - Hit the Validate button for the corresponding task.
-    > - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+   - If you receive a success message, you can proceed to the next task.
+   - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+ 
+   <validation step="eeee5693-cb58-4c1c-a282-ad195f87da98" />
     
 ### Task 2: Apply Microsoft Defender for Office 365 preset security policies
 
