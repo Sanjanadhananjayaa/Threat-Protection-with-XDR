@@ -243,7 +243,7 @@ In this task, you will update the new playbook you created with the proper conne
 
    ![Lab overview.](./media/xdr43.png)    
 
-1. Select **Entities (2)** dynamic content from the right panel.
+1. Search and select **Entities (2)** dynamic content from the right panel.
 
    ![Lab overview.](./media/xdr38.png)
 
