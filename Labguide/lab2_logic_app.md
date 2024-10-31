@@ -166,9 +166,9 @@ In this task, you will create a Logic App that is used as a Playbook in Microsof
 
 1. Select the **Post-Message-Teams** folder.
 
-1. In the readme.md box, scroll down to the *Quick Deployment* section, **Deploy with incident trigger (recommended)** and select the **Deploy to Azure** button.
+1. In the readme.md box, scroll down to the **Quick Deployment (1)** section, **Deploy with incident trigger (recommended) (2)** and select the **Deploy to Azure (3)** button.
 
-    ![Lab overview.](./media/lab03-task02-githubplaybook.png) 
+    ![Lab overview.](./media/xdr46.png) 
 
 1. On the **Custom deployment** page provide the following details.
 
