@@ -44,10 +44,9 @@ By the end of this lab, you will be able to:
 - Understanding of cybersecurity principles and attack methodologies.
 - Access to a Microsoft 365 tenant with appropriate licenses.
 
-
 ## Architecture
 
-The architecture diagram outlines a sequence of labs for implementing and configuring Microsoft Defender for Endpoint. Starting with setup and role configuration, users will configure device groups and create baseline policies. Subsequent labs focus on onboarding machines, managing vulnerabilities, configuring endpoint detection and response (EDR), testing endpoint capabilities, and simulating attack scenarios for hands-on security training.
+The architecture diagram outlines a series of labs focused on configuring and utilizing Microsoft Sentinel and Defender for threat detection and incident response. The labs begin with setting up Sentinel, onboarding devices, and connecting event sources. Users then configure security settings in Microsoft Defender, detect persistence and control attacks, and respond to incidents. Labs progress through creating playbooks, setting up hunting queries, and defining security policies. The sequence culminates with investigating alerts and managing incidents, providing comprehensive security operations training.
 
 ## Architecture Diagram
 
@@ -60,7 +59,8 @@ The architecture diagram outlines a sequence of labs for implementing and config
 - **Microsoft Defender Portal** : It is a security management platform that integrates various security solutions within the Microsoft ecosystem, enabling organizations to protect their environments across Microsoft 365, Azure, and other platforms. 
 
 ## Getting Started with the Lab
-Welcome to your Threat Protection with XDR workshop! We've prepared a seamless environment for you to familiarize yourself with the Microsoft security operations analyst, you monitor, identify, investigate, and respond to threats in multi-cloud environments and related Microsoft services. Let's begin by making the most of this experience:
+
+Ensure you have access to all required tools, account and carefully read each task and follow the steps in sequence. Refer to screenshots and tips provided for guidance throughout the lab.
 
 ## Accessing Your Lab Environment
  
