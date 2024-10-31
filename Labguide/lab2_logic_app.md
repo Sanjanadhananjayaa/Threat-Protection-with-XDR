@@ -152,13 +152,12 @@ In this task, you will create a team in Microsoft Teams for use in the lab.
 
 1. Enter a channel name as **New Alerts** then select the **Add** button.
 
-    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-    > - Click the Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation tab.
-    > - Hit the Validate button for the corresponding task.
-    > - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
-
-    <validation step="e89c097b-30b8-467a-a682-388f360e19a9" />
+   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   - If you receive a success message, you can proceed to the next task.
+   - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+ 
+   <validation step="5e120148-dee3-45fe-8e37-6cbed679379f" />
 
 ### Task 4: Create a Playbook in Microsoft Sentinel.
 
