@@ -21,9 +21,10 @@ Analytics rules search for specific events or sets of events across your environ
 ### Task 1: Persistence Attack Detection
 
 In this task, you will create a detection for the first attack of the previous exercise.
+1. In the Search bar of the Azure portal, type *Microsft Sentinel (1)*, then select **Microsoft Sentinel (2)**.
 
-1. In the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel**.
-
+   ![](./media/09.png)
+   
 1. Select the Microsoft Sentinel Workspace you created earlier.
 
 1. Select **Logs** from the *General* section.
