@@ -32,9 +32,9 @@ You're a Security Operations Analyst working at a company that implemented Micro
     |Group Name| **Sg-IT** |
     |Microsoft Entra roles can be assigned to the group| **Yes** |
 
-1. Click on **no owners selected** and select the **ODL_user** from the list and then click on **select**.
+1. Click on **no owners selected** and select the **<inject key="AzureAdUserEmail"></inject>** from the list and then click on **select**.
 
-1. Click on **no members selected** and select the **ODL_user** from the list and then click on **select**.
+1. Click on **no members selected** and select the **<inject key="AzureAdUserEmail"></inject>** from the list and then click on **select**.
 
    **Note**: Make sure you have selected **Group type** as **Microsoft 365**.
 
@@ -135,7 +135,7 @@ In this task, you will activate a Microsoft Security rule.
 
 1. Review the changes made and select the **Save** button. The Analytics rule will be saved.
 
-1. Onboard the **s2vm-<inject key="DeploymentID" enableCopy="false"** using device onboard using the microsoft defender endpoint onboarding portal.
+1. Onboard the **s2vm-<inject key="DeploymentID" enableCopy="false">** using device onboard using the microsoft defender endpoint onboarding portal.
 
    >**Note**: You can refer the **Lab01 > Task 3** to onboard the device to Microsoft Defender.
 
@@ -145,13 +145,13 @@ In this task, you will manage the incidents in the M365 Defender portal.
 
 1. If you are not already at the Microsoft 365 Defender portal in your Microsoft Edge browser, go to (https://security.microsoft.com). 
 
-1. In the **Sign in** dialog box, copy and paste * Email/Username: <inject key="AzureAdUserEmail"></inject> and then select Next.
+1. In the **Sign in** dialog box, copy and paste **Email/Username: <inject key="AzureAdUserEmail"></inject>** and then select Next.
 
-1. In the **Enter password** dialog box, copy and paste * Password: <inject key="AzureAdUserPassword"></inject> and then select **Sign in**.
+1. In the **Enter password** dialog box, copy and paste **Password: <inject key="AzureAdUserPassword"></inject>** and then select **Sign in**.
 
-1. From the sidebar menu, under **Incidents and Alerts**, select **Incidents**. Click on the incident **[Test Alert] Suspicious Powershell commandline on one endpoint**.
+1. From the sidebar menu, from **Investigation & response** select **Incidents** under **Incidents and Alerts**. Click on the incident **[Test Alert] Suspicious Powershell commandline on one endpoint**.
 
-1. To manage an incident, click on back to incident details and click on **Manage Incident** to edit the details of this incident. don't make any change only review the details
+1. Click on **Manage Incident** to edit the details of this incident. Don't make any change only review the details
 
 1. Here, you can edit the name of the incident, add tags, assign it to an existing group or a user, change the status, classify the incident as required, and even add comments.
 
