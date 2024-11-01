@@ -9,8 +9,9 @@ Analytics rules search for specific events or sets of events across your environ
 ## Lab objectives
  In this lab, you will understand the following:
 
-- Task 1: Persistence Attack Detection
-- Task 2: Privilege Elevation Attack Detection
+- Task 1: Create an Automation Rule
+- Task 2: Persistence Attack Detection
+- Task 3: Privilege Elevation Attack Detection
 
 ## Estimated timing: 30 minutes
 
@@ -18,7 +19,55 @@ Analytics rules search for specific events or sets of events across your environ
 
   ![Lab overview.](./media/lab02part2.png)
 
-### Task 1: Persistence Attack Detection
+### Task 1: Create an Automation Rule
+
+In this task, you will create an automation rule which we will be using in while creating the Alert rule in Persistance attack detection. 
+1. In the Search bar of the Azure portal, type *Microsft Sentinel (1)*, then select **Microsoft Sentinel (2)**.
+
+   ![](./media/09.png)
+   
+1. Select the Microsoft Sentinel Workspace you created earlier.
+
+1. Select Automation from the *Configuration* section.
+
+1. Click on *Create* and select *Automation rule*.
+
+1. In the *Edit automation rule* use the below settings in the table to configure the automation rule.
+
+    |Setting|Value|
+    |:----|:----|
+    |Automation rule name|Startup RegKey|
+    |Trigger|When incident is created|
+    |Actions |Run playbook|
+   
+1. A second drop-down menu appears with an *Information (i)* message regarding playbook permissions and a **Manage playbook permissions link**
+
+    >**Note:** The playbooks will appear grayed out in the drop-down list until permissions are configured.
+
+1. Select the **Manage playbook permissions link**
+
+1. On the *Manage Permissions* page, select the **threat-xdr** resource group, and select **Apply**.
+
+1. From the drop-down menu, select the playbook **PostMessageTeams-OnIncident**, if required refresh the page.
+
+1. Select **Apply**
+
+    ![Lab overview.](./media/create-automation-rule.png)
+
+1. Similarly, create another rule using the below settings,
+
+   |Setting|Value|
+   |:----|:----|
+   |Automation rule name|**SecurityEvent Local Administrators User Add (1)**|
+   |Trigger|**When incident is created (2)**|
+   |Actions |**Run playbook (3)**|
+   |playbook |**PostMessageTeams-OnIncident (4)**|
+
+   >**Note:** You have already assigned permissions to the playbook, so it must be available if not click on manage permissions and select it manually and it will be available by now
+
+   ![](./media/create-automation-rule2.png)
+
+### Task 2: Persistence Attack Detection
 
 In this task, you will create a detection for the first attack of the previous exercise.
 1. In the Search bar of the Azure portal, type *Microsft Sentinel (1)*, then select **Microsoft Sentinel (2)**.
@@ -70,7 +119,7 @@ In this task, you will create a detection for the first attack of the previous e
 
 1. Select **Next: Set rule logic >** button.
 
-1. On the *Set rule logic* tab, the *Rule query* should be populated already with your KQL query, as well as the entities under *Alert enrichment - Entity mapping*, select **+ Add New Entity**.
+1. On the *Set rule logic* tab, the *Rule query* should be populated already with your KQL query, under *Alert enhancement* expand *Entity mapping* and select **+ Add New Entity**.
 
     |Entity|Identifier|Data Field|
     |:----|:----|:----|
@@ -92,35 +141,11 @@ In this task, you will create a detection for the first attack of the previous e
 
 1. For the *Incident settings* tab, leave the default values and select **Next: Automated response >** button.
 
-1. On the *Automated response* tab under *Automation rules*, select **Add new**.
-
-1. Use the settings in the table to configure the automation rule.
-
-    |Setting|Value|
-    |:----|:----|
-    |Automation rule name|Startup RegKey|
-    |Trigger|When incident is created|
-    |Actions |Run playbook|
-   
-1. A second drop-down menu appears with an *Information (i)* message regarding playbook permissions and a **Manage playbook permissions link**
-
-    >**Note:** The playbooks will appear grayed out in the drop-down list until permissions are configured.
-
-1. Select the **Manage playbook permissions link**
-
-1. On the *Manage Permissions* page, select the **threat-xdr** resource group, and select **Apply**.
-
-1. From the drop-down menu, select the playbook **PostMessageTeams-OnIncident**, if required refresh the page.
-
-1. Select **Apply**
-
-    ![Lab overview.](./media/Lab06-task03-automationrule.png)
-
-1. Select the **Next: Review + Create** button.
+1. On the *Automated response* tab, you will be able to see the Automation rule created in previous task. Leave everything as default and select  **Next: Review + Create** button.
   
 1. On the *Review and create* tab, select the **Save** button to create the new Scheduled Analytics rule.
 
-### Task 2: Privilege Elevation Attack Detection
+### Task 3: Privilege Elevation Attack Detection
 
 In this task, you will create a detection for the second attack of the previous exercise.
 
@@ -214,20 +239,9 @@ In this task, you will create a detection for the second attack of the previous 
 
 1. For the *Incident settings* tab, leave the default values and select **Next: Automated response >** button.
 
-1. On the *Automated response* tab under *Automation rules*, select **Add new (1)** and Use the settings in the table to configure the automation rule Select **Apply (6)**.
+1. On the *Automated response* tab under *Automation rules*, leave the default values and select **Next: Review + create >** button.
 
-   |Setting|Value|
-   |:----|:----|
-   |Automation rule name|**SecurityEvent Local Administrators User Add (1)**|
-   |Trigger|**When incident is created (2)**|
-   |Actions |**Run playbook (3)**|
-   |playbook |**PostMessageTeams-OnIncident (4)**|
-
-   >**Note:** You have already assigned permissions to the playbook, so it must be available if not click on manage permissions and select it manually and it will be available by now
-
-   ![](./media/6-7.png)
-
-1. Select the **Next: Review + create >** button.
+   ![](./media/analytics-rule.png)
   
 1. On the *Review and create* tab, select the **Save** button to create the new Scheduled Analytics rule.
 
